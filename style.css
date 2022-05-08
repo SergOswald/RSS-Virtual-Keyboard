@@ -1,0 +1,325 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.wripper {
+    max-width: 1280px;
+    height: 100%;
+
+    margin:0 auto;
+    padding: 0;
+
+}
+
+.main {
+    
+    position: relative;
+    display: block;
+
+    top:0px;
+    left:0;
+
+}
+
+
+
+.textarea {
+    display:block;
+    position:relative;
+
+    margin:0 auto;
+    padding: 0;
+
+    top:100px;
+    
+    width: 900px;
+    height: 250px;
+}
+
+.keyboard {
+    display:flex;
+    position:relative;
+
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+
+    margin:0 auto;
+    padding: 0;
+
+    top:150px;
+    
+    width: 950px;
+    height: 280px;
+
+    border: 5px solid black ;
+    border-radius: 9px;
+
+    background-color: gray;
+}
+
+.section1 {
+    display:flex;
+    position:relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section2 {
+    display:flex;
+    position:relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section3 {
+    display:flex;
+    position:relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section4 {
+    display:flex;
+    position:relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section5 {
+    display:flex;
+    position:relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.button1 {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    /*top:100px;*/
+    
+    width: 100px;
+    height: 100px;
+
+}
+
+.tilda {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    /*top:100px;*/
+    
+    width: 50px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: rgb(32, 27, 27);
+
+    border-radius: 3px;
+
+}
+
+.del {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    /*top:100px;*/
+    
+    width: 50px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: black;
+
+    border-radius: 3px;
+
+}
+
+.backspace {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: black;
+    border-radius: 3px;
+}
+
+.tab {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 75px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: black;
+    border-radius: 3px;
+}
+
+.capslk {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 120px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: black;
+    border-radius: 3px;
+
+
+}
+
+.enter {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 120px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: black;
+    border-radius: 3px;
+
+
+}
+
+.shift {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 120px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: black;
+    border-radius: 3px;
+
+}
+
+.artop {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 50px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: black;
+    border-radius: 3px;
+
+}
+
+.ctrl, .win, .alt, .arright, .arbot,.arleft {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 50px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: black;
+    border-radius: 3px;
+
+
+}
+
+.prob {
+    display:block;
+    position:relative;
+
+    margin: 0;
+    padding: 0;
+
+    /*top:100px;*/
+    
+    width: 450px;
+    height: 50px;
+
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: rgb(32, 27, 27);
+
+    border-radius: 3px;
+
+}
+
+.section2 {
+    margin-right: 0;
+
+
+}
+
