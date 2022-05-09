@@ -317,9 +317,86 @@ body {
 
 }
 
+.section1 > div:hover, .section2 > div:hover, .section3 > div:hover, .section4 > div:hover, .section5 > div:hover {
+    background-color: rgb(25, 184, 216);
+    cursor: pointer;
+}
+
 .section2 {
     margin-right: 0;
 
+}
+
+.textBut1 {
+    position: relative;
+    display: block ;
+    /*
+    width: 184px;
+    height: 35px;
+
+    left: 0px;
+    top: 1px;
+    */
+
+    padding: 0 ;
+    margin: 0 0 0 5px;
+
+    text-align: left;
+
+    color:yellow;
+   /* font-family: "Georgia-regular";*/
+    font-weight: 400;
+    font-style: normal;
+    
+    line-height: 15pt;
+    font-size: 15pt;
 
 }
 
+.textBut2 {
+    position: relative;
+    display: block ;
+/*
+    width: 184px;
+    height: 35px;
+
+    left: 0px;
+    top: 1px;
+    */
+
+    padding: 0 ;
+    margin: 0;
+
+    color:yellow;
+   /* font-family: "Georgia-regular";*/
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    line-height: 15pt;
+    font-size: 15pt;
+
+}
+
+.textButBackspace {
+    position: relative;
+    display: block ;
+/*
+    width: 184px;
+    height: 35px;
+
+    left: 0px;
+    top: 1px;
+    */
+
+    padding: 0 ;
+    margin: 14px 0 0 0;
+
+    color:yellow;
+   /* font-family: "Georgia-regular";*/
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    line-height: 15pt;
+    font-size: 15pt;
+
+)
