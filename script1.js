@@ -28,57 +28,250 @@ let div1 = document.createElement('div');
 div1.className = "tilda";
 section1.append( div1 );
 
+let p1 = document.createElement('p');
+p1.className = "textBut1";
+div1.append( p1 );
+p1.innerHTML = "~" ;
+
+let p2 = document.createElement('span');
+p2.className = "textBut2";
+div1.append( p2 );
+p2.innerHTML = "`" ;
+
 let div2 = document.createElement('div');
 div2.className = "tilda";
 section1.append( div2 );
+
+let p3 = document.createElement('p');
+p3.className = "textBut1";
+div2.append( p3 );
+p3.innerHTML = "!" ;
+
+let p4 = document.createElement('p');
+p4.className = "textBut2";
+div2.append( p4 );
+p4.innerHTML = "1" ;
+
+p4.addEventListener( "click" , () => { 
+    textarea.innerHTML += "1" ;
+} )
+
 
 let div3 = document.createElement('div');
 div3.className = "tilda";
 section1.append( div3 );
 
+let p5 = document.createElement('p');
+p5.className = "textBut1";
+div3.append( p5 );
+p5.innerHTML = "@" ;
+
+let p6 = document.createElement('p');
+p6.className = "textBut2";
+div3.append( p6 );
+p6.innerHTML = "2" ;
+
+p6.addEventListener( "click" , () => { 
+    textarea.innerHTML += "2" ;
+} )
+
 let div4 = document.createElement('div');
 div4.className = "tilda";
 section1.append( div4 );
+
+let p7 = document.createElement('p');
+p7.className = "textBut1";
+div4.append( p7 );
+p7.innerHTML = "#" ;
+
+let p8 = document.createElement('p');
+p8.className = "textBut2";
+div4.append( p8 );
+p8.innerHTML = "3" ;
+
+p8.addEventListener( "click" , () => { 
+    textarea.innerHTML += "3" ;
+} )
 
 let div5 = document.createElement('div');
 div5.className = "tilda";
 section1.append( div5 );
 
+let p9 = document.createElement('p');
+p9.className = "textBut1";
+div5.append( p9 );
+p9.innerHTML = "$" ;
+
+let p10 = document.createElement('p');
+p10.className = "textBut2";
+div5.append( p10 );
+p10.innerHTML = "4" ;
+
+p10.addEventListener( "click" , () => { 
+    textarea.innerHTML += "4" ;
+} )
+
 let div6 = document.createElement('div');
 div6.className = "tilda";
 section1.append( div6 );
+
+let p11 = document.createElement('p');
+p11.className = "textBut1";
+div6.append( p11 );
+p11.innerHTML = "%" ;
+
+let p12 = document.createElement('p');
+p12.className = "textBut2";
+div6.append( p12 );
+p12.innerHTML = "5" ;
+
+p12.addEventListener( "click" , () => { 
+    textarea.innerHTML += "5" ;
+} )
 
 let div7 = document.createElement('div');
 div7.className = "tilda";
 section1.append( div7 );
 
+let p13 = document.createElement('p');
+p13.className = "textBut1";
+div7.append( p13 );
+p13.innerHTML = "^" ;
+
+let p14 = document.createElement('p');
+p14.className = "textBut2";
+div7.append( p14 );
+p14.innerHTML = "6" ;
+
+p14.addEventListener( "click" , () => { 
+    textarea.innerHTML += "6" ;
+} )
+
 let div8 = document.createElement('div');
 div8.className = "tilda";
 section1.append( div8 );
+
+let p15 = document.createElement('p');
+p15.className = "textBut1";
+div8.append( p15 );
+p15.innerHTML = "&" ;
+
+let p16 = document.createElement('p');
+p16.className = "textBut2";
+div8.append( p16 );
+p16.innerHTML = "7" ;
+
+p16.addEventListener( "click" , () => { 
+    textarea.innerHTML += "7" ;
+} )
 
 let div9 = document.createElement('div');
 div9.className = "tilda";
 section1.append( div9 );
 
+let p17 = document.createElement('p');
+p17.className = "textBut1";
+div9.append( p17 );
+p17.innerHTML = "*" ;
+
+let p18 = document.createElement('p');
+p18.className = "textBut2";
+div9.append( p18 );
+p18.innerHTML = "8" ;
+
+p18.addEventListener( "click" , () => { 
+    textarea.innerHTML += "8" ;
+} )
+
 let div10 = document.createElement('div');
 div10.className = "tilda";
 section1.append( div10 );
+
+let p19 = document.createElement('p');
+p19.className = "textBut1";
+div10.append( p19 );
+p19.innerHTML = "(" ;
+
+let p20 = document.createElement('p');
+p20.className = "textBut2";
+div10.append( p20 );
+p20.innerHTML = "9" ;
+
+p20.addEventListener( "click" , () => { 
+    textarea.innerHTML += "9" ;
+} )
 
 let div11 = document.createElement('div');
 div11.className = "tilda";
 section1.append( div11 );
 
+let p21 = document.createElement('p');
+p21.className = "textBut1";
+div11.append( p21 );
+p21.innerHTML = ")" ;
+
+let p22 = document.createElement('p');
+p22.className = "textBut2";
+div11.append( p22 );
+p22.innerHTML = "0" ;
+
+p22.addEventListener( "click" , () => { 
+    textarea.innerHTML += "0" ;
+} )
+
 let div12 = document.createElement('div');
 div12.className = "tilda";
 section1.append( div12 );
+
+let p23 = document.createElement('p');
+p23.className = "textBut1";
+div12.append( p23 );
+p23.innerHTML = "_" ;
+
+let p24 = document.createElement('p');
+p24.className = "textBut2";
+div12.append( p24 );
+p24.innerHTML = "-" ;
+
+p24.addEventListener( "click" , () => { 
+    textarea.innerHTML += "-" ;
+} )
 
 let div13 = document.createElement('div');
 div13.className = "tilda";
 section1.append( div13 );
 
+let p25 = document.createElement('p');
+p25.className = "textBut1";
+div13.append( p25 );
+p25.innerHTML = "+" ;
+
+let p26 = document.createElement('p');
+p26.className = "textBut2";
+div13.append( p26 );
+p26.innerHTML = "=" ;
+
+p26.addEventListener( "click" , () => { 
+    textarea.innerHTML += "=" ;
+} )
+
 let div14 = document.createElement('div');
 div14.className = "backspace";
 section1.append( div14 );
+
+let p27 = document.createElement('p');
+p27.className = "textBut1";
+div14.append( p27 );
+p27.innerHTML = "" ;
+
+let p28 = document.createElement('p');
+p28.className = "textButBackspace";
+div14.append( p28 );
+p28.innerHTML = "Backspace" ;
+
+p28.addEventListener( "click" , () => { 
+    textarea.innerHTML += "" ;
+} )
 
 /*=======*/
 
