@@ -584,10 +584,10 @@ section2.append( div28 );
 let p55 = document.createElement('p');
 p55.className = "textBut1";
 div28.append( p55 );
-p55.innerHTML = "" ;
+p55.innerHTML = "/" ;
 
 let p56 = document.createElement('p');
-p56.className = "textButBackspace";
+p56.className = "textBut2";
 div28.append( p56 );
 p56.innerHTML = "\\" ;
 
@@ -612,57 +612,201 @@ let section3 = document.createElement('div');
 section3.className = "section3";
 section.append( section3 );
 
+
 let div30 = document.createElement('div');
 div30.className = "capslk";
 section3.append( div30 );
+
+let p59 = document.createElement('p');
+p59.className = "textBut1";
+div30.append( p59 );
+p59.innerHTML = "" ;
+
+let p60 = document.createElement('p');
+p60.className = "textButBackspace";
+div30.append( p60 );
+p60.innerHTML = "CapsLk" ;
+
 
 let div31 = document.createElement('div');
 div31.className = "tilda";
 section3.append( div31 );
 
+let p61 = document.createElement('p');
+p61.className = "textBut1";
+div31.append( p61 );
+p61.innerHTML = "" ;
+
+let p62 = document.createElement('p');
+p62.className = "textButBackspace";
+div31.append( p62 );
+p62.innerHTML = "A" ;
+
+
 let div32 = document.createElement('div');
 div32.className = "tilda";
 section3.append( div32 );
+
+let p63 = document.createElement('p');
+p63.className = "textBut1";
+div32.append( p63 );
+p63.innerHTML = "" ;
+
+let p64 = document.createElement('p');
+p64.className = "textButBackspace";
+div32.append( p64 );
+p64.innerHTML = "S" ;
+
 
 let div33 = document.createElement('div');
 div33.className = "tilda";
 section3.append( div33 );
 
+let p65 = document.createElement('p');
+p65.className = "textBut1";
+div33.append( p65 );
+p65.innerHTML = "" ;
+
+let p66 = document.createElement('p');
+p66.className = "textButBackspace";
+div33.append( p66 );
+p66.innerHTML = "D" ;
+
+
 let div34 = document.createElement('div');
 div34.className = "tilda";
 section3.append( div34 );
+
+let p67 = document.createElement('p');
+p67.className = "textBut1";
+div34.append( p67 );
+p67.innerHTML = "" ;
+
+let p68 = document.createElement('p');
+p68.className = "textButBackspace";
+div34.append( p68 );
+p68.innerHTML = "F" ;
+
 
 let div35 = document.createElement('div');
 div35.className = "tilda";
 section3.append( div35 );
 
+let p69 = document.createElement('p');
+p69.className = "textBut1";
+div35.append( p69 );
+p69.innerHTML = "" ;
+
+let p70 = document.createElement('p');
+p70.className = "textButBackspace";
+div35.append( p70 );
+p70.innerHTML = "G" ;
+
+
 let div36 = document.createElement('div');
 div36.className = "tilda";
 section3.append( div36 );
+
+let p71 = document.createElement('p');
+p71.className = "textBut1";
+div36.append( p71 );
+p71.innerHTML = "" ;
+
+let p72 = document.createElement('p');
+p72.className = "textButBackspace";
+div36.append( p72 );
+p72.innerHTML = "H" ;
+
 
 let div37 = document.createElement('div');
 div37.className = "tilda";
 section3.append( div37 );
 
+let p73 = document.createElement('p');
+p73.className = "textBut1";
+div37.append( p73 );
+p73.innerHTML = "" ;
+
+let p74 = document.createElement('p');
+p74.className = "textButBackspace";
+div37.append( p74 );
+p74.innerHTML = "J" ;
+
+
 let div38 = document.createElement('div');
 div38.className = "tilda";
 section3.append( div38 );
+
+let p75 = document.createElement('p');
+p75.className = "textBut1";
+div38.append( p75 );
+p75.innerHTML = "" ;
+
+let p76 = document.createElement('p');
+p76.className = "textButBackspace";
+div38.append( p76 );
+p76.innerHTML = "K" ;
+
 
 let div39 = document.createElement('div');
 div39.className = "tilda";
 section3.append( div39 );
 
+let p77 = document.createElement('p');
+p77.className = "textBut1";
+div39.append( p77 );
+p77.innerHTML = "" ;
+
+let p78 = document.createElement('p');
+p78.className = "textButBackspace";
+div39.append( p78 );
+p78.innerHTML = "L" ;
+
+
 let div40 = document.createElement('div');
 div40.className = "tilda";
 section3.append( div40 );
+
+let p79 = document.createElement('p');
+p79.className = "textBut1";
+div40.append( p79 );
+p79.innerHTML = "" ;
+
+let p80 = document.createElement('p');
+p80.className = "textButBackspace";
+div40.append( p80 );
+p80.innerHTML = ";" ;
+
 
 let div41 = document.createElement('div');
 div41.className = "tilda";
 section3.append( div41 );
 
+let p81 = document.createElement('p');
+p81.className = "textBut1";
+div41.append( p81 );
+p81.innerHTML = "" ;
+
+let p82 = document.createElement('p');
+p82.className = "textButBackspace";
+div41.append( p82 );
+p82.innerHTML = "'" ;
+
+
 let div42 = document.createElement('div');
 div42.className = "enter";
 section3.append( div42 );
+
+let p83 = document.createElement('p');
+p83.className = "textBut1";
+div42.append( p83 );
+p83.innerHTML = "" ;
+
+let p84 = document.createElement('p');
+p84.className = "textButBackspace";
+div42.append( p84 );
+p84.innerHTML = "ENTER" ;
+
 
 /*========================*/
 
@@ -675,53 +819,209 @@ let div43 = document.createElement('div');
 div43.className = "shift";
 section4.append( div43 );
 
+let p85 = document.createElement('p');
+p85.className = "textBut1";
+div43.append( p85 );
+p85.innerHTML = "" ;
+
+let p86 = document.createElement('p');
+p86.className = "textButBackspace";
+div43.append( p86 );
+p86.innerHTML = "Shift" ;
+
 let div44 = document.createElement('div');
 div44.className = "tilda";
 section4.append( div44 );
+
+let p87 = document.createElement('p');
+p87.className = "textBut1";
+div44.append( p87 );
+p87.innerHTML = "" ;
+
+let p88 = document.createElement('p');
+p88.className = "textButBackspace";
+div44.append( p88 );
+p88.innerHTML = "\\" ;
+
 
 let div45 = document.createElement('div');
 div45.className = "tilda";
 section4.append( div45 );
 
+let p89 = document.createElement('p');
+p89.className = "textBut1";
+div45.append( p89 );
+p89.innerHTML = "" ;
+
+let p90 = document.createElement('p');
+p90.className = "textButBackspace";
+div45.append( p90 );
+p90.innerHTML = "Z" ;
+
+
 let div46 = document.createElement('div');
 div46.className = "tilda";
 section4.append( div46 );
+
+let p91 = document.createElement('p');
+p91.className = "textBut1";
+div46.append( p91 );
+p91.innerHTML = "" ;
+
+let p92 = document.createElement('p');
+p92.className = "textButBackspace";
+div46.append( p92 );
+p92.innerHTML = "X" ;
+
 
 let div47 = document.createElement('div');
 div47.className = "tilda";
 section4.append( div47 );
 
+let p93 = document.createElement('p');
+p93.className = "textBut1";
+div47.append( p93 );
+p93.innerHTML = "" ;
+
+let p94 = document.createElement('p');
+p94.className = "textButBackspace";
+div47.append( p94 );
+p94.innerHTML = "C" ;
+
+
 let div48 = document.createElement('div');
 div48.className = "tilda";
 section4.append( div48 );
+
+let p95 = document.createElement('p');
+p95.className = "textBut1";
+div48.append( p95 );
+p95.innerHTML = "" ;
+
+let p96 = document.createElement('p');
+p96.className = "textButBackspace";
+div48.append( p96 );
+p96.innerHTML = "V" ;
+
 
 let div49 = document.createElement('div');
 div49.className = "tilda";
 section4.append( div49 );
 
+let p97 = document.createElement('p');
+p97.className = "textBut1";
+div49.append( p97 );
+p97.innerHTML = "" ;
+
+let p98 = document.createElement('p');
+p98.className = "textButBackspace";
+div49.append( p98 );
+p98.innerHTML = "B" ;
+
+
 let div50 = document.createElement('div');
 div50.className = "tilda";
 section4.append( div50 );
+
+let p99 = document.createElement('p');
+p99.className = "textBut1";
+div50.append( p99 );
+p99.innerHTML = "" ;
+
+let p100 = document.createElement('p');
+p100.className = "textButBackspace";
+div50.append( p100 );
+p100.innerHTML = "N" ;
+
 
 let div51 = document.createElement('div');
 div51.className = "tilda";
 section4.append( div51 );
 
+let p101 = document.createElement('p');
+p101.className = "textBut1";
+div51.append( p101 );
+p101.innerHTML = "" ;
+
+let p102 = document.createElement('p');
+p102.className = "textButBackspace";
+div51.append( p102 );
+p102.innerHTML = "M" ;
+
+
 let div52 = document.createElement('div');
 div52.className = "tilda";
 section4.append( div52 );
+
+let p103 = document.createElement('p');
+p103.className = "textBut1";
+div52.append( p103 );
+p103.innerHTML = "" ;
+
+let p104 = document.createElement('p');
+p104.className = "textButBackspace";
+div52.append( p104 );
+p104.innerHTML = "," ;
+
 
 let div53 = document.createElement('div');
 div53.className = "tilda";
 section4.append( div53 );
 
+let p105 = document.createElement('p');
+p105.className = "textBut1";
+div53.append( p105 );
+p105.innerHTML = "" ;
+
+let p106 = document.createElement('p');
+p106.className = "textButBackspace";
+div53.append( p106 );
+p106.innerHTML = "." ;
+
+let div531 = document.createElement('div');
+div531.className = "tilda";
+section4.append( div531 );
+
+let p107 = document.createElement('p');
+p107.className = "textBut1";
+div531.append( p107 );
+p107.innerHTML = "" ;
+
+let p108 = document.createElement('p');
+p108.className = "textButBackspace";
+div531.append( p108 );
+p108.innerHTML = "/" ;
+
+
 let div54 = document.createElement('div');
 div54.className = "artop";
 section4.append( div54 );
 
+let p109 = document.createElement('p');
+p109.className = "textBut1";
+div54.append( p109 );
+p109.innerHTML = "" ;
+
+let p110 = document.createElement('p');
+p110.className = "textButBackspace";
+div54.append( p110 );
+p110.innerHTML = "▲" ;
+
+
 let div55 = document.createElement('div');
 div55.className = "shift";
 section4.append( div55 );
+
+let p111 = document.createElement('p');
+p111.className = "textBut1";
+div55.append( p111 );
+p111.innerHTML = "" ;
+
+let p112 = document.createElement('p');
+p112.className = "textButBackspace";
+div55.append( p112 );
+p112.innerHTML = "Shift" ;
+
 
 /*=============*/
 
@@ -729,41 +1029,131 @@ let section5 = document.createElement('div');
 section5.className = "section5";
 section.append( section5 );
 
+
 let div56 = document.createElement('div');
 div56.className = "ctrl";
 section5.append( div56 );
+
+let p113 = document.createElement('p');
+p113.className = "textBut1";
+div56.append( p113 );
+p113.innerHTML = "" ;
+
+let p114 = document.createElement('p');
+p114.className = "textButBackspace";
+div56.append( p114 );
+p114.innerHTML = "Ctrl" ;
 
 let div57 = document.createElement('div');
 div57.className = "win";
 section5.append( div57 );
 
+let p115 = document.createElement('p');
+p115.className = "textBut1";
+div57.append( p115 );
+p115.innerHTML = "" ;
+
+let p116 = document.createElement('p');
+p116.className = "textButBackspace";
+div57.append( p116 );
+p116.innerHTML = "Win" ;
+
+
 let div58 = document.createElement('div');
 div58.className = "alt";
 section5.append( div58 );
+
+let p117 = document.createElement('p');
+p117.className = "textBut1";
+div58.append( p117 );
+p117.innerHTML = "" ;
+
+let p118 = document.createElement('p');
+p118.className = "textButBackspace";
+div58.append( p118 );
+p118.innerHTML = "Alt" ;
+
+
 
 let div59 = document.createElement('div');
 div59.className = "prob";
 section5.append( div59 );
 
+
 let div60 = document.createElement('div');
-div60.className = "tilda";
+div60.className = "alt";
 section5.append( div60 );
+
+let p119 = document.createElement('p');
+p119.className = "textBut1";
+div60.append( p119 );
+p119.innerHTML = "" ;
+
+let p120 = document.createElement('p');
+p120.className = "textButBackspace";
+div60.append( p120 );
+p120.innerHTML = "Alt" ;
+
+
+let div64 = document.createElement('div');
+div64.className = "ctrl";
+section5.append( div64 );
+
+let p121 = document.createElement('p');
+p121.className = "textBut1";
+div64.append( p121 );
+p121.innerHTML = "" ;
+
+let p122 = document.createElement('p');
+p122.className = "textButBackspace";
+div64.append( p122 );
+p122.innerHTML = "Ctrl" ;
 
 let div61 = document.createElement('div');
 div61.className = "arleft";
 section5.append( div61 );
 
+let p123 = document.createElement('p');
+p123.className = "textBut1";
+div61.append( p123 );
+p123.innerHTML = "" ;
+
+let p124 = document.createElement('p');
+p124.className = "textButBackspace";
+div61.append( p124 );
+p124.innerHTML = "ᐊ" ;
+
+
 let div62 = document.createElement('div');
 div62.className = "arbot";
 section5.append( div62 );
+
+let p125 = document.createElement('p');
+p125.className = "textBut1";
+div62.append( p125 );
+p125.innerHTML = "" ;
+
+let p126 = document.createElement('p');
+p126.className = "textButBackspace";
+div62.append( p126 );
+p126.innerHTML = "▼" ;
+
 
 let div63 = document.createElement('div');
 div63.className = "arright";
 section5.append( div63 );
 
-let div64 = document.createElement('div');
-div64.className = "ctrl";
-section5.append( div64 );
+let p127 = document.createElement('p');
+p127.className = "textBut1";
+div63.append( p127 );
+p127.innerHTML = "" ;
+
+let p128 = document.createElement('p');
+p128.className = "textButBackspace";
+div63.append( p128 );
+p128.innerHTML = "ᐅ" ;
+
+
 
 /*=========*/
 
