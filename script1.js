@@ -3,6 +3,17 @@ div.className = "wripper";
 //textarea.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
 document.body.append( div );
 
+let header = document.createElement('header');
+header.className = "header";
+div.append( header );
+
+let h1 = document.createElement('h1');
+h1.className = "texth1";
+header.append( h1 );
+h1.innerHTML = "RSS VIRTUAL KEYBOARD" ;
+
+
+
 
 let main = document.createElement('main');
 main.className = "main";
@@ -12,6 +23,7 @@ div.append( main );
 let textarea = document.createElement('textarea');
 textarea.className = "textarea";
 main.append( textarea );
+//textarea.getAttribute('disabled') ;
 
 
 let section = document.createElement('section');
@@ -45,16 +57,25 @@ div1.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backquote" ) {
         textarea.innerHTML += "`" ;
-      
+        div1.style.borderRadius = " 15px ";
     }
 });
 
+document.addEventListener('keyup', function(event) {
+    
+        div1.style.borderRadius = " 3px ";
+    
+});
+
+/*
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backquote" && ( event.code == "ShiftLeft" || event.code == "ShiftRight" )) {
         textarea.innerHTML += "~" ;
       
     }
 });
+
+*/
 
 let div2 = document.createElement('div');
 div2.className = "tilda";
@@ -77,8 +98,14 @@ p4.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit1' ) {
         textarea.innerHTML += "1" ;
-      //  p4.style.border-radius = "25px" ;
+        div2.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div2.style.borderRadius = " 3px ";
+    
 });
 
 
@@ -103,8 +130,14 @@ div3.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit2' ) {
         textarea.innerHTML += "2" ;
-      
+        div3.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div3.style.borderRadius = " 3px ";
+    
 });
 
 let div4 = document.createElement('div');
@@ -128,8 +161,14 @@ div4.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit3' ) {
         textarea.innerHTML += "3" ;
-      
+        div4.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div4.style.borderRadius = " 3px ";
+    
 });
 
 let div5 = document.createElement('div');
@@ -153,9 +192,17 @@ div5.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit4' ) {
         textarea.innerHTML += "4" ;
-      
+        div5.style.borderRadius = " 15px ";
     }
 });
+
+document.addEventListener('keyup', function(event) {
+    
+        div5.style.borderRadius = " 3px ";
+    
+});
+
+//======
 
 let div6 = document.createElement('div');
 div6.className = "tilda";
@@ -178,8 +225,14 @@ div6.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit5' ) {
         textarea.innerHTML += "5" ;
-      
+        div6.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div6.style.borderRadius = " 3px ";
+    
 });
 
 
@@ -204,8 +257,14 @@ div7.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit6' ) {
         textarea.innerHTML += "6" ;
-      
+        div7.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div7.style.borderRadius = " 3px ";
+    
 });
 
 let div8 = document.createElement('div');
@@ -229,8 +288,14 @@ div8.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit7' ) {
         textarea.innerHTML += "7" ;
-      
+        div8.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div8.style.borderRadius = " 3px ";
+    
 });
 
 let div9 = document.createElement('div');
@@ -254,8 +319,14 @@ div9.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit8' ) {
         textarea.innerHTML += "8" ;
-      
+        div9.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div9.style.borderRadius = " 3px ";
+    
 });
 
 let div10 = document.createElement('div');
@@ -279,8 +350,14 @@ div10.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit9' ) {
         textarea.innerHTML += "9" ;
-      
+        div10.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div10.style.borderRadius = " 3px ";
+    
 });
 
 let div11 = document.createElement('div');
@@ -304,8 +381,14 @@ div11.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit0' ) {
         textarea.innerHTML += "0" ;
-      
+        div11.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div11.style.borderRadius = " 3px ";
+    
 });
 
 let div12 = document.createElement('div');
@@ -329,8 +412,14 @@ div12.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Minus" ) {
         textarea.innerHTML += "-" ;
-      
+        div12.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div12.style.borderRadius = " 3px ";
+    
 });
 
 let div13 = document.createElement('div');
@@ -354,8 +443,14 @@ div13.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Equal" ) {
         textarea.innerHTML += "=" ;
-      
+        div13.style.borderRadius = " 15px ";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div13.style.borderRadius = " 3px ";
+    
 });
 
 let div14 = document.createElement('div');
@@ -373,8 +468,21 @@ div14.append( p28 );
 p28.innerHTML = "Backspace" ;
 
 div14.addEventListener( "click" , () => { 
-    textarea.innerHTML += "" ;
+    textarea.innerHTML =  textarea.innerHTML.slice(0, -1) ;
 } )
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Backspace" ) {
+        textarea.innerHTML =  textarea.innerHTML.slice(0, -1) ;
+        div14.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div14.style.borderRadius = " 3px ";
+    
+});
 
 /*=======*/
 
@@ -397,6 +505,24 @@ p30.className = "textButBackspace";
 div15.append( p30 );
 p30.innerHTML = "Tab" ;
 
+div15.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "  ";
+} )
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Tab" ) {
+        textarea.innerHTML +=  "  ";
+        div15.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div15.style.borderRadius = " 3px ";
+    
+});
+
+
 
 let div16 = document.createElement('div');
 div16.className = "tilda";
@@ -412,6 +538,26 @@ p32.className = "textButBackspace";
 div16.append( p32 );
 p32.innerHTML = "Q" ;
 
+div16.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "q";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyQ" ) {
+        textarea.innerHTML +=  "q";
+        div16.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div16.style.borderRadius = " 3px ";
+    
+});
+
+
+
+
 let div17 = document.createElement('div');
 div17.className = "tilda";
 section2.append( div17 );
@@ -425,6 +571,25 @@ let p34 = document.createElement('p');
 p34.className = "textButBackspace";
 div17.append( p34 );
 p34.innerHTML = "W" ;
+
+div17.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "w";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyW" ) {
+        textarea.innerHTML +=  "w";
+        div17.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div17.style.borderRadius = " 3px ";
+    
+});
+
+
 
 
 let div18 = document.createElement('div');
@@ -441,6 +606,24 @@ p36.className = "textButBackspace";
 div18.append( p36 );
 p36.innerHTML = "E" ;
 
+div18.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "e";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyE" ) {
+        textarea.innerHTML +=  "e";
+        div18.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div18.style.borderRadius = " 3px ";
+    
+});
+
+
 
 let div19 = document.createElement('div');
 div19.className = "tilda";
@@ -455,6 +638,25 @@ let p38 = document.createElement('p');
 p38.className = "textButBackspace";
 div19.append( p38 );
 p38.innerHTML = "R" ;
+
+div19.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "r";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyR" ) {
+        textarea.innerHTML +=  "r";
+        div19.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div19.style.borderRadius = " 3px ";
+    
+});
+
+
 
 
 let div20 = document.createElement('div');
@@ -471,6 +673,24 @@ p40.className = "textButBackspace";
 div20.append( p40 );
 p40.innerHTML = "T" ;
 
+div20.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "t";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyT" ) {
+        textarea.innerHTML +=  "t";
+        div20.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div20.style.borderRadius = " 3px ";
+    
+});
+
+
 
 let div21 = document.createElement('div');
 div21.className = "tilda";
@@ -485,6 +705,25 @@ let p42 = document.createElement('p');
 p42.className = "textButBackspace";
 div21.append( p42 );
 p42.innerHTML = "Y" ;
+
+div21.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "y";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyY" ) {
+        textarea.innerHTML +=  "y";
+        div21.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div21.style.borderRadius = " 3px ";
+    
+});
+
+
 
 
 let div22 = document.createElement('div');
@@ -501,6 +740,26 @@ p44.className = "textButBackspace";
 div22.append( p44 );
 p44.innerHTML = "U" ;
 
+div21.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "u";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyU" ) {
+        textarea.innerHTML +=  "u";
+        div21.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div21.style.borderRadius = " 3px ";
+    
+});
+
+
+
+
 
 let div23 = document.createElement('div');
 div23.className = "tilda";
@@ -515,6 +774,25 @@ let p46 = document.createElement('p');
 p46.className = "textButBackspace";
 div23.append( p46 );
 p46.innerHTML = "I" ;
+
+div23.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "i";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyI" ) {
+        textarea.innerHTML +=  "i";
+        div23.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div23.style.borderRadius = " 3px ";
+    
+});
+
+
 
 
 let div24 = document.createElement('div');
@@ -531,6 +809,24 @@ p48.className = "textButBackspace";
 div24.append( p48 );
 p48.innerHTML = "O" ;
 
+div24.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "o";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyO" ) {
+        textarea.innerHTML +=  "o";
+        div24.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div24.style.borderRadius = " 3px ";
+    
+});
+
+
 
 let div25 = document.createElement('div');
 div25.className = "tilda";
@@ -545,6 +841,25 @@ let p50 = document.createElement('p');
 p50.className = "textButBackspace";
 div25.append( p50 );
 p50.innerHTML = "P" ;
+
+div25.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "p";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyP" ) {
+        textarea.innerHTML +=  "p";
+        div25.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div25.style.borderRadius = " 3px ";
+    
+});
+
+
 
 
 let div26 = document.createElement('div');
@@ -642,6 +957,23 @@ p62.className = "textButBackspace";
 div31.append( p62 );
 p62.innerHTML = "A" ;
 
+div31.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "a";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyA" ) {
+        textarea.innerHTML +=  "a";
+        div31.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div31.style.borderRadius = " 3px ";
+    
+});
+
 
 let div32 = document.createElement('div');
 div32.className = "tilda";
@@ -656,6 +988,25 @@ let p64 = document.createElement('p');
 p64.className = "textButBackspace";
 div32.append( p64 );
 p64.innerHTML = "S" ;
+
+div32.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "s";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyS" ) {
+        textarea.innerHTML +=  "s";
+        div32.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div32.style.borderRadius = " 3px ";
+    
+});
+
+
 
 
 let div33 = document.createElement('div');
@@ -672,6 +1023,24 @@ p66.className = "textButBackspace";
 div33.append( p66 );
 p66.innerHTML = "D" ;
 
+div33.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "d";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyD" ) {
+        textarea.innerHTML +=  "d";
+        div33.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div33.style.borderRadius = " 3px ";
+    
+});
+
+
 
 let div34 = document.createElement('div');
 div34.className = "tilda";
@@ -686,6 +1055,24 @@ let p68 = document.createElement('p');
 p68.className = "textButBackspace";
 div34.append( p68 );
 p68.innerHTML = "F" ;
+
+div34.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "f";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyF" ) {
+        textarea.innerHTML +=  "f";
+        div34.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div34.style.borderRadius = " 3px ";
+    
+});
+
 
 
 let div35 = document.createElement('div');
@@ -702,6 +1089,24 @@ p70.className = "textButBackspace";
 div35.append( p70 );
 p70.innerHTML = "G" ;
 
+div35.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "g";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyG" ) {
+        textarea.innerHTML +=  "g";
+        div35.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div35.style.borderRadius = " 3px ";
+    
+});
+
+
 
 let div36 = document.createElement('div');
 div36.className = "tilda";
@@ -716,6 +1121,24 @@ let p72 = document.createElement('p');
 p72.className = "textButBackspace";
 div36.append( p72 );
 p72.innerHTML = "H" ;
+
+div36.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "h";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyH" ) {
+        textarea.innerHTML +=  "h";
+        div36.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div36.style.borderRadius = " 3px ";
+    
+});
+
 
 
 let div37 = document.createElement('div');
@@ -732,6 +1155,25 @@ p74.className = "textButBackspace";
 div37.append( p74 );
 p74.innerHTML = "J" ;
 
+div37.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "j";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyJ" ) {
+        textarea.innerHTML +=  "j";
+        div37.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div37.style.borderRadius = " 3px ";
+    
+});
+
+
+
 
 let div38 = document.createElement('div');
 div38.className = "tilda";
@@ -747,6 +1189,25 @@ p76.className = "textButBackspace";
 div38.append( p76 );
 p76.innerHTML = "K" ;
 
+div38.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "k";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyK" ) {
+        textarea.innerHTML +=  "k";
+        div38.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div38.style.borderRadius = " 3px ";
+    
+});
+
+
+
 
 let div39 = document.createElement('div');
 div39.className = "tilda";
@@ -761,6 +1222,24 @@ let p78 = document.createElement('p');
 p78.className = "textButBackspace";
 div39.append( p78 );
 p78.innerHTML = "L" ;
+
+div38.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "l";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyL" ) {
+        textarea.innerHTML +=  "l";
+        div38.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div38.style.borderRadius = " 3px ";
+    
+});
+
 
 
 let div40 = document.createElement('div');
@@ -858,6 +1337,25 @@ p90.className = "textButBackspace";
 div45.append( p90 );
 p90.innerHTML = "Z" ;
 
+div45.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "z";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyZ" ) {
+        textarea.innerHTML +=  "z";
+        div45.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div45.style.borderRadius = " 3px ";
+    
+});
+
+
+
 
 let div46 = document.createElement('div');
 div46.className = "tilda";
@@ -872,6 +1370,26 @@ let p92 = document.createElement('p');
 p92.className = "textButBackspace";
 div46.append( p92 );
 p92.innerHTML = "X" ;
+
+div46.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "x";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyX" ) {
+        textarea.innerHTML +=  "x";
+        div46.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div46.style.borderRadius = " 3px ";
+    
+});
+
+
+
 
 
 let div47 = document.createElement('div');
@@ -888,6 +1406,26 @@ p94.className = "textButBackspace";
 div47.append( p94 );
 p94.innerHTML = "C" ;
 
+div47.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "c";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyC" ) {
+        textarea.innerHTML +=  "c";
+        div47.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div47.style.borderRadius = " 3px ";
+    
+});
+
+
+
+
 
 let div48 = document.createElement('div');
 div48.className = "tilda";
@@ -902,6 +1440,25 @@ let p96 = document.createElement('p');
 p96.className = "textButBackspace";
 div48.append( p96 );
 p96.innerHTML = "V" ;
+
+div48.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "v";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyV" ) {
+        textarea.innerHTML +=  "v";
+        div48.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div48.style.borderRadius = " 3px ";
+    
+});
+
+
 
 
 let div49 = document.createElement('div');
@@ -918,6 +1475,24 @@ p98.className = "textButBackspace";
 div49.append( p98 );
 p98.innerHTML = "B" ;
 
+div49.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "b";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyB" ) {
+        textarea.innerHTML +=  "b";
+        div49.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div49.style.borderRadius = " 3px ";
+    
+});
+
+
 
 let div50 = document.createElement('div');
 div50.className = "tilda";
@@ -933,6 +1508,25 @@ p100.className = "textButBackspace";
 div50.append( p100 );
 p100.innerHTML = "N" ;
 
+div50.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "n";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyN" ) {
+        textarea.innerHTML +=  "n";
+        div50.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div50.style.borderRadius = " 3px ";
+    
+});
+
+
+
 
 let div51 = document.createElement('div');
 div51.className = "tilda";
@@ -947,6 +1541,25 @@ let p102 = document.createElement('p');
 p102.className = "textButBackspace";
 div51.append( p102 );
 p102.innerHTML = "M" ;
+
+div51.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "m";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "KeyM" ) {
+        textarea.innerHTML +=  "m";
+        div51.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div51.style.borderRadius = " 3px ";
+    
+});
+
+
 
 
 let div52 = document.createElement('div');
@@ -1079,6 +1692,25 @@ let div59 = document.createElement('div');
 div59.className = "prob";
 section5.append( div59 );
 
+div59.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  " ";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Space" ) {
+        textarea.innerHTML +=  " ";
+        div59.style.borderRadius = " 15px ";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div59.style.borderRadius = " 3px ";
+    
+});
+
+
+
 
 let div60 = document.createElement('div');
 div60.className = "alt";
@@ -1157,6 +1789,13 @@ p128.innerHTML = "ᐅ" ;
 
 /*=========*/
 
+let footer = document.createElement('footer');
+footer.className = "footer";
+div.append( footer );
 
+let h2 = document.createElement('h2');
+h2.className = "texth2";
+footer.append( h2 );
+h2.innerHTML = "Клавиатура создана в операционной системе Windows" ;
 
 
