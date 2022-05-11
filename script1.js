@@ -23,6 +23,7 @@ div.append( main );
 let textarea = document.createElement('textarea');
 textarea.className = "textarea";
 main.append( textarea );
+//textarea.getAttribute('disabled') ;
 
 
 let section = document.createElement('section');
@@ -56,16 +57,26 @@ div1.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backquote" ) {
         textarea.innerHTML += "`" ;
-      
+        div1.style.borderRadius = " 15px ";
+        div1.style.background = "blue";
     }
 });
 
+document.addEventListener('keyup', function(event) {
+    
+        div1.style.borderRadius = " 3px ";
+        div1.style.background = "black";
+});
+
+/*
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backquote" && ( event.code == "ShiftLeft" || event.code == "ShiftRight" )) {
         textarea.innerHTML += "~" ;
       
     }
 });
+
+*/
 
 let div2 = document.createElement('div');
 div2.className = "tilda";
@@ -88,8 +99,16 @@ p4.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit1' ) {
         textarea.innerHTML += "1" ;
-      //  p4.style.border-radius = "25px" ;
+        div2.style.borderRadius = " 15px ";
+        div2.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div2.style.borderRadius = " 3px ";
+        div2.style.background = "black";
+    
 });
 
 
@@ -114,8 +133,16 @@ div3.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit2' ) {
         textarea.innerHTML += "2" ;
-      
+        div3.style.borderRadius = " 15px ";
+        div3.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div3.style.borderRadius = " 3px ";
+        div3.style.background = "black";
+    
 });
 
 let div4 = document.createElement('div');
@@ -139,8 +166,16 @@ div4.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit3' ) {
         textarea.innerHTML += "3" ;
-      
+        div4.style.borderRadius = " 15px ";
+        div4.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div4.style.borderRadius = " 3px ";
+        div4.style.background = "black";
+    
 });
 
 let div5 = document.createElement('div');
@@ -164,8 +199,16 @@ div5.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit4' ) {
         textarea.innerHTML += "4" ;
-      
+        div5.style.borderRadius = " 15px ";
+        div5.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div5.style.borderRadius = " 3px ";
+        div5.style.background = "black";
+    
 });
 
 //======
@@ -191,8 +234,16 @@ div6.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit5' ) {
         textarea.innerHTML += "5" ;
-      
+        div6.style.borderRadius = " 15px ";
+        div6.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div6.style.borderRadius = " 3px ";
+        div6.style.background = "black";
+    
 });
 
 
@@ -217,8 +268,16 @@ div7.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit6' ) {
         textarea.innerHTML += "6" ;
-      
+        div7.style.borderRadius = " 15px ";
+        div7.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div7.style.borderRadius = " 3px ";
+        div7.style.background = "black";
+    
 });
 
 let div8 = document.createElement('div');
@@ -242,8 +301,16 @@ div8.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit7' ) {
         textarea.innerHTML += "7" ;
-      
+        div8.style.borderRadius = " 15px ";
+        div8.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div8.style.borderRadius = " 3px ";
+        div8.style.background = "black";
+    
 });
 
 let div9 = document.createElement('div');
@@ -267,8 +334,16 @@ div9.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit8' ) {
         textarea.innerHTML += "8" ;
-      
+        div9.style.borderRadius = " 15px ";
+        div9.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div9.style.borderRadius = " 3px ";
+        div9.style.background = "black";
+    
 });
 
 let div10 = document.createElement('div');
@@ -292,8 +367,16 @@ div10.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit9' ) {
         textarea.innerHTML += "9" ;
-      
+        div10.style.borderRadius = " 15px ";
+        div10.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div10.style.borderRadius = " 3px ";
+        div10.style.background = "black";
+    
 });
 
 let div11 = document.createElement('div');
@@ -317,8 +400,16 @@ div11.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit0' ) {
         textarea.innerHTML += "0" ;
-      
+        div11.style.borderRadius = " 15px ";
+        div11.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div11.style.borderRadius = " 3px ";
+        div11.style.background = "black";
+    
 });
 
 let div12 = document.createElement('div');
@@ -342,8 +433,16 @@ div12.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Minus" ) {
         textarea.innerHTML += "-" ;
-      
+        div12.style.borderRadius = " 15px ";
+        div12.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div12.style.borderRadius = " 3px ";
+        div12.style.background = "black";
+    
 });
 
 let div13 = document.createElement('div');
@@ -367,8 +466,16 @@ div13.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Equal" ) {
         textarea.innerHTML += "=" ;
-      
+        div13.style.borderRadius = " 15px ";
+        div13.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div13.style.borderRadius = " 3px ";
+        div13.style.background = "black";
+    
 });
 
 let div14 = document.createElement('div');
@@ -386,14 +493,22 @@ div14.append( p28 );
 p28.innerHTML = "Backspace" ;
 
 div14.addEventListener( "click" , () => { 
-    textarea.innerHTML =  textarea.innerHTML.slice( 1 );
+    textarea.innerHTML =  textarea.innerHTML.slice(0, -1) ;
 } )
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backspace" ) {
-        textarea.innerHTML =  textarea.innerHTML.slice( 1 );
-      
+        textarea.innerHTML =  textarea.innerHTML.slice(0, -1) ;
+        div14.style.borderRadius = " 15px ";
+        div14.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div14.style.borderRadius = " 3px ";
+        div14.style.background = "black";
+    
 });
 
 /*=======*/
@@ -418,14 +533,22 @@ div15.append( p30 );
 p30.innerHTML = "Tab" ;
 
 div15.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "  ";
+    textarea.innerHTML +=  "Tab";
 } )
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Tab" ) {
         textarea.innerHTML +=  "  ";
-      
+        div15.style.borderRadius = " 15px ";
+        div15.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div15.style.borderRadius = " 3px ";
+        div15.style.background = "black";
+    
 });
 
 
@@ -451,8 +574,16 @@ div16.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyQ" ) {
         textarea.innerHTML +=  "q";
-      
+        div16.style.borderRadius = " 15px ";
+        div61.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div16.style.borderRadius = " 3px ";
+        div16.style.background = "black";
+    
 });
 
 
@@ -479,8 +610,16 @@ div17.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyW" ) {
         textarea.innerHTML +=  "w";
-      
+        div17.style.borderRadius = " 15px ";
+        div17.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div17.style.borderRadius = " 3px ";
+        div17.style.background = "black";
+    
 });
 
 
@@ -507,8 +646,16 @@ div18.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyE" ) {
         textarea.innerHTML +=  "e";
-      
+        div18.style.borderRadius = " 15px ";
+        div18.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div18.style.borderRadius = " 3px ";
+        div18.style.background = "black";
+    
 });
 
 
@@ -534,8 +681,16 @@ div19.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyR" ) {
         textarea.innerHTML +=  "r";
-      
+        div19.style.borderRadius = " 15px ";
+        div19.style.background = "blue";
     }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div19.style.borderRadius = " 3px ";
+        div19.style.background = "black";
+    
 });
 
 
@@ -562,8 +717,16 @@ div20.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyT" ) {
         textarea.innerHTML +=  "t";
-      
-    } ;
+        div20.style.borderRadius = " 15px ";
+        div20.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div20.style.borderRadius = " 3px ";
+        div20.style.background = "black";
+    
 });
 
 
@@ -589,8 +752,16 @@ div21.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyY" ) {
         textarea.innerHTML +=  "y";
-      
-    } ;
+        div21.style.borderRadius = " 15px ";
+        div21.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div21.style.borderRadius = " 3px ";
+        div21.style.background = "black";
+    
 });
 
 
@@ -610,15 +781,23 @@ p44.className = "textButBackspace";
 div22.append( p44 );
 p44.innerHTML = "U" ;
 
-div21.addEventListener( "click" , () => { 
+div22.addEventListener( "click" , () => { 
     textarea.innerHTML +=  "u";
 } ) ;
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyU" ) {
         textarea.innerHTML +=  "u";
-      
-    } ;
+        div22.style.borderRadius = " 15px ";
+        div22.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div22.style.borderRadius = " 3px ";
+        div22.style.background = "black";
+    
 });
 
 
@@ -646,8 +825,16 @@ div23.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyI" ) {
         textarea.innerHTML +=  "i";
-      
-    } ;
+        div23.style.borderRadius = " 15px ";
+        div23.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div23.style.borderRadius = " 3px ";
+        div23.style.background = "black";
+    
 });
 
 
@@ -674,8 +861,16 @@ div24.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyO" ) {
         textarea.innerHTML +=  "o";
-      
-    } ;
+        div24.style.borderRadius = " 15px ";
+        div24.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div24.style.borderRadius = " 3px ";
+        div24.style.background = "black";
+    
 });
 
 
@@ -701,8 +896,16 @@ div25.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyP" ) {
         textarea.innerHTML +=  "p";
-      
-    } ;
+        div25.style.borderRadius = " 15px ";
+        div25.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div25.style.borderRadius = " 3px ";
+        div25.style.background = "black";
+    
 });
 
 
@@ -810,8 +1013,16 @@ div31.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyA" ) {
         textarea.innerHTML +=  "a";
-      
-    } ;
+        div31.style.borderRadius = " 15px ";
+        div31.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div31.style.borderRadius = " 3px ";
+        div31.style.background = "black";
+    
 });
 
 
@@ -836,8 +1047,16 @@ div32.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyS" ) {
         textarea.innerHTML +=  "s";
-      
-    } ;
+        div32.style.borderRadius = " 15px ";
+        div32.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div32.style.borderRadius = " 3px ";
+        div32.style.background = "black";
+    
 });
 
 
@@ -864,8 +1083,16 @@ div33.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyD" ) {
         textarea.innerHTML +=  "d";
-      
-    } ;
+        div33.style.borderRadius = " 15px ";
+        div33.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div33.style.borderRadius = " 3px ";
+        div33.style.background = "black";
+    
 });
 
 
@@ -891,8 +1118,16 @@ div34.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyF" ) {
         textarea.innerHTML +=  "f";
-      
-    } ;
+        div34.style.borderRadius = " 15px ";
+        div34.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div34.style.borderRadius = " 3px ";
+        div34.style.background = "black";
+    
 });
 
 
@@ -918,8 +1153,16 @@ div35.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyG" ) {
         textarea.innerHTML +=  "g";
-      
-    } ;
+        div35.style.borderRadius = " 15px ";
+        div35.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div35.style.borderRadius = " 3px ";
+        div35.style.background = "black";
+    
 });
 
 
@@ -945,8 +1188,16 @@ div36.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyH" ) {
         textarea.innerHTML +=  "h";
-      
-    } ;
+        div36.style.borderRadius = " 15px ";
+        div36.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div36.style.borderRadius = " 3px ";
+        div36.style.background = "black";
+    
 });
 
 
@@ -972,8 +1223,16 @@ div37.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyJ" ) {
         textarea.innerHTML +=  "j";
-      
-    } ;
+        div37.style.borderRadius = " 15px ";
+        div37.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div37.style.borderRadius = " 3px ";
+        div37.style.background = "black";
+    
 });
 
 
@@ -1000,8 +1259,16 @@ div38.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyK" ) {
         textarea.innerHTML +=  "k";
-      
-    } ;
+        div38.style.borderRadius = " 15px ";
+        div38.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div38.style.borderRadius = " 3px ";
+        div38.style.background = "black";
+    
 });
 
 
@@ -1021,15 +1288,23 @@ p78.className = "textButBackspace";
 div39.append( p78 );
 p78.innerHTML = "L" ;
 
-div38.addEventListener( "click" , () => { 
+div39.addEventListener( "click" , () => { 
     textarea.innerHTML +=  "l";
 } ) ;
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyL" ) {
         textarea.innerHTML +=  "l";
-      
-    } ;
+        div39.style.borderRadius = " 15px ";
+        div39.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div39.style.borderRadius = " 3px ";
+        div39.style.background = "black";
+    
 });
 
 
@@ -1136,8 +1411,16 @@ div45.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyZ" ) {
         textarea.innerHTML +=  "z";
-      
-    } ;
+        div45.style.borderRadius = " 15px ";
+        div45.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div45.style.borderRadius = " 3px ";
+        div45.style.background = "black";
+    
 });
 
 
@@ -1164,8 +1447,16 @@ div46.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyX" ) {
         textarea.innerHTML +=  "x";
-      
-    } ;
+        div46.style.borderRadius = " 15px ";
+        div46.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div46.style.borderRadius = " 3px ";
+        div46.style.background = "black";
+    
 });
 
 
@@ -1193,8 +1484,16 @@ div47.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyC" ) {
         textarea.innerHTML +=  "c";
-      
-    } ;
+        div47.style.borderRadius = " 15px ";
+        div47.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div47.style.borderRadius = " 3px ";
+        div47.style.background = "black";
+    
 });
 
 
@@ -1222,8 +1521,16 @@ div48.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyV" ) {
         textarea.innerHTML +=  "v";
-      
-    } ;
+        div48.style.borderRadius = " 15px ";
+        div48.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div48.style.borderRadius = " 3px ";
+        div48.style.background = "black";
+    
 });
 
 
@@ -1250,8 +1557,16 @@ div49.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyB" ) {
         textarea.innerHTML +=  "b";
-      
-    } ;
+        div49.style.borderRadius = " 15px ";
+        div49.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div49.style.borderRadius = " 3px ";
+        div49.style.background = "black";
+    
 });
 
 
@@ -1277,8 +1592,16 @@ div50.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyN" ) {
         textarea.innerHTML +=  "n";
-      
-    } ;
+        div50.style.borderRadius = " 15px ";
+        div50.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div50.style.borderRadius = " 3px ";
+        div50.style.background = "black";
+    
 });
 
 
@@ -1305,8 +1628,16 @@ div51.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyM" ) {
         textarea.innerHTML +=  "m";
-      
-    } ;
+        div51.style.borderRadius = " 15px ";
+        div51.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div51.style.borderRadius = " 3px ";
+        div51.style.background = "black";
+    
 });
 
 
@@ -1449,8 +1780,16 @@ div59.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Space" ) {
         textarea.innerHTML +=  " ";
-      
-    } ;
+        div59.style.borderRadius = " 15px ";
+        div59.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div59.style.borderRadius = " 3px ";
+        div59.style.background = "black";
+    
 });
 
 
