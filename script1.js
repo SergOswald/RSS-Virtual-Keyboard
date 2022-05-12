@@ -575,7 +575,7 @@ document.addEventListener('keydown', function(event) {
     if (event.code == "KeyQ" ) {
         textarea.innerHTML +=  "q";
         div16.style.borderRadius = " 15px ";
-        div61.style.background = "blue";
+        div16.style.background = "blue";
     }
 });
 
@@ -926,6 +926,27 @@ div26.append( p52 );
 p52.innerHTML = "[" ;
 
 
+div26.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "[";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "BracketLeft" ) {
+        textarea.innerHTML +=  "[";
+        div26.style.borderRadius = " 15px ";
+        div26.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div26.style.borderRadius = " 3px ";
+        div26.style.background = "black";
+    
+});
+
+
+
 let div27 = document.createElement('div');
 div27.className = "tilda";
 section2.append( div27 );
@@ -939,6 +960,27 @@ let p54 = document.createElement('p');
 p54.className = "textButBackspace";
 div27.append( p54 );
 p54.innerHTML = "]" ;
+
+
+div27.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "]";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "BracketRight" ) {
+        textarea.innerHTML +=  "]";
+        div27.style.borderRadius = " 15px ";
+        div27.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div27.style.borderRadius = " 3px ";
+        div27.style.background = "black";
+    
+});
+
 
 
 let div28 = document.createElement('div');
@@ -955,6 +997,26 @@ p56.className = "textBut2";
 div28.append( p56 );
 p56.innerHTML = "\\" ;
 
+div28.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "\\";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Backslash" ) {
+        textarea.innerHTML +=  "\\";
+        div28.style.borderRadius = " 15px ";
+        div28.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div28.style.borderRadius = " 3px ";
+        div28.style.background = "black";
+    
+});
+
+
 
 let div29 = document.createElement('div');
 div29.className = "del";
@@ -969,6 +1031,28 @@ let p58 = document.createElement('p');
 p58.className = "textButBackspace";
 div29.append( p58 );
 p58.innerHTML = "Del" ;
+
+div29.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "NumpadDecimal" ) {
+        textarea.innerHTML +=  "";
+        div29.style.borderRadius = " 15px ";
+        div29.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div29.style.borderRadius = " 3px ";
+        div29.style.background = "black";
+    
+});
+
+
+
 
 /*=========*/
 
@@ -990,6 +1074,26 @@ let p60 = document.createElement('p');
 p60.className = "textButBackspace";
 div30.append( p60 );
 p60.innerHTML = "CapsLk" ;
+
+div30.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "CapsLock" ) {
+        textarea.innerHTML +=  "";
+        div30.style.borderRadius = " 15px ";
+        div30.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div30.style.borderRadius = " 3px ";
+        div30.style.background = "black";
+    
+});
+
 
 
 let div31 = document.createElement('div');
@@ -1323,6 +1427,26 @@ p80.className = "textButBackspace";
 div40.append( p80 );
 p80.innerHTML = ";" ;
 
+div40.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  ";";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Semicolon" ) {
+        textarea.innerHTML +=  ";";
+        div40.style.borderRadius = " 15px ";
+        div40.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div40.style.borderRadius = " 3px ";
+        div40.style.background = "black";
+    
+});
+
+
 
 let div41 = document.createElement('div');
 div41.className = "tilda";
@@ -1338,6 +1462,27 @@ p82.className = "textButBackspace";
 div41.append( p82 );
 p82.innerHTML = "'" ;
 
+div41.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "'";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Quote" ) {
+        textarea.innerHTML +=  "'";
+        div41.style.borderRadius = " 15px ";
+        div41.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div41.style.borderRadius = " 3px ";
+        div41.style.background = "black";
+    
+});
+
+
+
 
 let div42 = document.createElement('div');
 div42.className = "enter";
@@ -1352,6 +1497,27 @@ let p84 = document.createElement('p');
 p84.className = "textButBackspace";
 div42.append( p84 );
 p84.innerHTML = "ENTER" ;
+
+
+div42.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "\n" ;
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Enter" ) {
+        textarea.innerHTML +=  "\n" ;
+        div42.style.borderRadius = " 15px ";
+        div42.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div42.style.borderRadius = " 3px ";
+        div42.style.background = "black";
+    
+});
+
 
 
 /*========================*/
@@ -1388,6 +1554,26 @@ let p88 = document.createElement('p');
 p88.className = "textButBackspace";
 div44.append( p88 );
 p88.innerHTML = "\\" ;
+
+div44.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "\\" ;
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Backslash" ) {
+        textarea.innerHTML +=  "\\" ;
+        div44.style.borderRadius = " 15px ";
+        div44.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div44.style.borderRadius = " 3px ";
+        div44.style.background = "black";
+    
+});
+
 
 
 let div45 = document.createElement('div');
@@ -1657,6 +1843,25 @@ p104.className = "textButBackspace";
 div52.append( p104 );
 p104.innerHTML = "," ;
 
+div52.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  ",";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if ( event.code == "NumpadDecimal" ) {
+        textarea.innerHTML +=  ",";
+        div52.style.borderRadius = " 15px ";
+        div52.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div52.style.borderRadius = " 3px ";
+        div52.style.background = "black";
+    
+});
+
 
 let div53 = document.createElement('div');
 div53.className = "tilda";
@@ -1672,6 +1877,27 @@ p106.className = "textButBackspace";
 div53.append( p106 );
 p106.innerHTML = "." ;
 
+div53.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  ".";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if ( event.code == "Period" ) {
+        textarea.innerHTML +=  ".";
+        div53.style.borderRadius = " 15px ";
+        div53.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div53.style.borderRadius = " 3px ";
+        div53.style.background = "black";
+    
+});
+
+
+
 let div531 = document.createElement('div');
 div531.className = "tilda";
 section4.append( div531 );
@@ -1685,6 +1911,25 @@ let p108 = document.createElement('p');
 p108.className = "textButBackspace";
 div531.append( p108 );
 p108.innerHTML = "/" ;
+
+div531.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "/";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if ( event.code == "Slash" ) {
+        textarea.innerHTML +=  "/";
+        div531.style.borderRadius = " 15px ";
+        div531.style.background = "blue";
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    
+        div531.style.borderRadius = " 3px ";
+        div531.style.background = "black";
+    
+});
 
 
 let div54 = document.createElement('div');
