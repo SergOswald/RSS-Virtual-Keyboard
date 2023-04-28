@@ -361,7 +361,11 @@ body {
 
 }
 
-.section1 > div:hover, .section2 > div:hover, .section3 > div:hover, .section4 > div:hover, .section5 > div:hover {
+.section1 > div:hover, 
+.section2 > div:hover, 
+.section3 > div:hover, 
+.section4 > div:hover, 
+.section5 > div:hover {
     background-color: rgb(25, 184, 216);
     cursor: pointer;
 }
@@ -443,4 +447,4 @@ body {
     line-height: 15pt;
     font-size: 15pt;
 
-)
+}
