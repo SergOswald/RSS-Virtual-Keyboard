@@ -1,3 +1,11 @@
+const KEYBOARD = {
+    Backquote : "`",
+    Digit1 : "1",
+  
+  } ;
+
+
+
 let div = document.createElement('div');
 div.className = "wripper";
 //textarea.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
@@ -23,7 +31,6 @@ div.append( main );
 let textarea = document.createElement('textarea');
 textarea.className = "textarea";
 main.append( textarea );
-//textarea.getAttribute('disabled') ;
 
 
 let section = document.createElement('section');
@@ -51,32 +58,34 @@ div1.append( p2 );
 p2.innerHTML = "`" ;
 
 div1.addEventListener( "click" , () => { 
-    textarea.innerHTML += "`" ;
+    textarea.innerHTML += KEYBOARD.Backquote ;
 } )
+
+// document.addEventListener('keydown', function(event) {
+//     if (event.code == "Backquote" ) {
+//         textarea.innerHTML += KEYBOARD.Backquote ;
+      
+//     }
+// });
+
+// function keyDown() {
+
+// };
+
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backquote" ) {
-        textarea.innerHTML += "`" ;
-        div1.style.borderRadius = " 15px ";
-        div1.style.background = "blue";
+        textarea.innerHTML += KEYBOARD.Backquote ;
+      
     }
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div1.style.borderRadius = " 3px ";
-        div1.style.background = "black";
-});
-
-/*
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backquote" && ( event.code == "ShiftLeft" || event.code == "ShiftRight" )) {
         textarea.innerHTML += "~" ;
       
     }
 });
-
-*/
 
 let div2 = document.createElement('div');
 div2.className = "tilda";
@@ -93,22 +102,14 @@ div2.append( p4 );
 p4.innerHTML = "1" ;
 
 p4.addEventListener( "click" , () => { 
-    textarea.innerHTML += "1" ;
+    textarea.innerHTML += KEYBOARD.Digit1 ;
 } )
 
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit1' ) {
-        textarea.innerHTML += "1" ;
-        div2.style.borderRadius = " 15px ";
-        div2.style.background = "blue";
+        textarea.innerHTML += KEYBOARD.Digit1 ;
+      //  p4.style.border-radius = "25px" ;
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div2.style.borderRadius = " 3px ";
-        div2.style.background = "black";
-    
 });
 
 
@@ -133,16 +134,8 @@ div3.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit2' ) {
         textarea.innerHTML += "2" ;
-        div3.style.borderRadius = " 15px ";
-        div3.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div3.style.borderRadius = " 3px ";
-        div3.style.background = "black";
-    
 });
 
 let div4 = document.createElement('div');
@@ -166,16 +159,8 @@ div4.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit3' ) {
         textarea.innerHTML += "3" ;
-        div4.style.borderRadius = " 15px ";
-        div4.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div4.style.borderRadius = " 3px ";
-        div4.style.background = "black";
-    
 });
 
 let div5 = document.createElement('div');
@@ -199,16 +184,8 @@ div5.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit4' ) {
         textarea.innerHTML += "4" ;
-        div5.style.borderRadius = " 15px ";
-        div5.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div5.style.borderRadius = " 3px ";
-        div5.style.background = "black";
-    
 });
 
 //======
@@ -234,16 +211,8 @@ div6.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit5' ) {
         textarea.innerHTML += "5" ;
-        div6.style.borderRadius = " 15px ";
-        div6.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div6.style.borderRadius = " 3px ";
-        div6.style.background = "black";
-    
 });
 
 
@@ -268,16 +237,8 @@ div7.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit6' ) {
         textarea.innerHTML += "6" ;
-        div7.style.borderRadius = " 15px ";
-        div7.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div7.style.borderRadius = " 3px ";
-        div7.style.background = "black";
-    
 });
 
 let div8 = document.createElement('div');
@@ -301,16 +262,8 @@ div8.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit7' ) {
         textarea.innerHTML += "7" ;
-        div8.style.borderRadius = " 15px ";
-        div8.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div8.style.borderRadius = " 3px ";
-        div8.style.background = "black";
-    
 });
 
 let div9 = document.createElement('div');
@@ -334,16 +287,8 @@ div9.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit8' ) {
         textarea.innerHTML += "8" ;
-        div9.style.borderRadius = " 15px ";
-        div9.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div9.style.borderRadius = " 3px ";
-        div9.style.background = "black";
-    
 });
 
 let div10 = document.createElement('div');
@@ -367,16 +312,8 @@ div10.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit9' ) {
         textarea.innerHTML += "9" ;
-        div10.style.borderRadius = " 15px ";
-        div10.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div10.style.borderRadius = " 3px ";
-        div10.style.background = "black";
-    
 });
 
 let div11 = document.createElement('div');
@@ -400,16 +337,8 @@ div11.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit0' ) {
         textarea.innerHTML += "0" ;
-        div11.style.borderRadius = " 15px ";
-        div11.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div11.style.borderRadius = " 3px ";
-        div11.style.background = "black";
-    
 });
 
 let div12 = document.createElement('div');
@@ -433,16 +362,8 @@ div12.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Minus" ) {
         textarea.innerHTML += "-" ;
-        div12.style.borderRadius = " 15px ";
-        div12.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div12.style.borderRadius = " 3px ";
-        div12.style.background = "black";
-    
 });
 
 let div13 = document.createElement('div');
@@ -466,16 +387,8 @@ div13.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Equal" ) {
         textarea.innerHTML += "=" ;
-        div13.style.borderRadius = " 15px ";
-        div13.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div13.style.borderRadius = " 3px ";
-        div13.style.background = "black";
-    
 });
 
 let div14 = document.createElement('div');
@@ -493,22 +406,14 @@ div14.append( p28 );
 p28.innerHTML = "Backspace" ;
 
 div14.addEventListener( "click" , () => { 
-    textarea.innerHTML =  textarea.innerHTML.slice(0, -1) ;
+    textarea.innerHTML =  textarea.innerHTML.slice( 1 );
 } )
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backspace" ) {
-        textarea.innerHTML =  textarea.innerHTML.slice(0, -1) ;
-        div14.style.borderRadius = " 15px ";
-        div14.style.background = "blue";
+        textarea.innerHTML =  textarea.innerHTML.slice( 1 );
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div14.style.borderRadius = " 3px ";
-        div14.style.background = "black";
-    
 });
 
 /*=======*/
@@ -533,22 +438,14 @@ div15.append( p30 );
 p30.innerHTML = "Tab" ;
 
 div15.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "Tab";
+    textarea.innerHTML +=  "  ";
 } )
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Tab" ) {
         textarea.innerHTML +=  "  ";
-        div15.style.borderRadius = " 15px ";
-        div15.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div15.style.borderRadius = " 3px ";
-        div15.style.background = "black";
-    
 });
 
 
@@ -574,16 +471,8 @@ div16.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyQ" ) {
         textarea.innerHTML +=  "q";
-        div16.style.borderRadius = " 15px ";
-        div16.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div16.style.borderRadius = " 3px ";
-        div16.style.background = "black";
-    
 });
 
 
@@ -610,16 +499,8 @@ div17.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyW" ) {
         textarea.innerHTML +=  "w";
-        div17.style.borderRadius = " 15px ";
-        div17.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div17.style.borderRadius = " 3px ";
-        div17.style.background = "black";
-    
 });
 
 
@@ -646,16 +527,8 @@ div18.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyE" ) {
         textarea.innerHTML +=  "e";
-        div18.style.borderRadius = " 15px ";
-        div18.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div18.style.borderRadius = " 3px ";
-        div18.style.background = "black";
-    
 });
 
 
@@ -681,16 +554,8 @@ div19.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyR" ) {
         textarea.innerHTML +=  "r";
-        div19.style.borderRadius = " 15px ";
-        div19.style.background = "blue";
+      
     }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div19.style.borderRadius = " 3px ";
-        div19.style.background = "black";
-    
 });
 
 
@@ -717,19 +582,11 @@ div20.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyT" ) {
         textarea.innerHTML +=  "t";
-        div20.style.borderRadius = " 15px ";
-        div20.style.background = "blue";
-    }
+      
+    } ;
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div20.style.borderRadius = " 3px ";
-        div20.style.background = "black";
-    
-});
-
-
+//====
 
 let div21 = document.createElement('div');
 div21.className = "tilda";
@@ -752,20 +609,11 @@ div21.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyY" ) {
         textarea.innerHTML +=  "y";
-        div21.style.borderRadius = " 15px ";
-        div21.style.background = "blue";
-    }
+      
+    } ;
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div21.style.borderRadius = " 3px ";
-        div21.style.background = "black";
-    
-});
-
-
-
+//====
 
 let div22 = document.createElement('div');
 div22.className = "tilda";
@@ -788,21 +636,11 @@ div22.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyU" ) {
         textarea.innerHTML +=  "u";
-        div22.style.borderRadius = " 15px ";
-        div22.style.background = "blue";
-    }
+      
+    } ;
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div22.style.borderRadius = " 3px ";
-        div22.style.background = "black";
-    
-});
-
-
-
-
+//====
 
 let div23 = document.createElement('div');
 div23.className = "tilda";
@@ -825,20 +663,11 @@ div23.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyI" ) {
         textarea.innerHTML +=  "i";
-        div23.style.borderRadius = " 15px ";
-        div23.style.background = "blue";
-    }
+      
+    } ;
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div23.style.borderRadius = " 3px ";
-        div23.style.background = "black";
-    
-});
-
-
-
+//====
 
 let div24 = document.createElement('div');
 div24.className = "tilda";
@@ -861,19 +690,11 @@ div24.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyO" ) {
         textarea.innerHTML +=  "o";
-        div24.style.borderRadius = " 15px ";
-        div24.style.background = "blue";
-    }
+      
+    } ;
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div24.style.borderRadius = " 3px ";
-        div24.style.background = "black";
-    
-});
-
-
+//====
 
 let div25 = document.createElement('div');
 div25.className = "tilda";
@@ -896,20 +717,11 @@ div25.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyP" ) {
         textarea.innerHTML +=  "p";
-        div25.style.borderRadius = " 15px ";
-        div25.style.background = "blue";
-    }
+      
+    } ;
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div25.style.borderRadius = " 3px ";
-        div25.style.background = "black";
-    
-});
-
-
-
+//====
 
 let div26 = document.createElement('div');
 div26.className = "tilda";
@@ -925,27 +737,18 @@ p52.className = "textButBackspace";
 div26.append( p52 );
 p52.innerHTML = "[" ;
 
-
 div26.addEventListener( "click" , () => { 
     textarea.innerHTML +=  "[";
 } ) ;
 
 document.addEventListener('keydown', function(event) {
-    if (event.code == "BracketLeft" ) {
+    if (event.code == "Key[" ) {
         textarea.innerHTML +=  "[";
-        div26.style.borderRadius = " 15px ";
-        div26.style.background = "blue";
-    }
+      
+    } ;
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div26.style.borderRadius = " 3px ";
-        div26.style.background = "black";
-    
-});
-
-
+//====
 
 let div27 = document.createElement('div');
 div27.className = "tilda";
@@ -961,27 +764,18 @@ p54.className = "textButBackspace";
 div27.append( p54 );
 p54.innerHTML = "]" ;
 
-
 div27.addEventListener( "click" , () => { 
     textarea.innerHTML +=  "]";
 } ) ;
 
 document.addEventListener('keydown', function(event) {
-    if (event.code == "BracketRight" ) {
+    if (event.code == "Key[" ) {
         textarea.innerHTML +=  "]";
-        div27.style.borderRadius = " 15px ";
-        div27.style.background = "blue";
-    }
+      
+    } ;
 });
 
-document.addEventListener('keyup', function(event) {
-    
-        div27.style.borderRadius = " 3px ";
-        div27.style.background = "black";
-    
-});
-
-
+//====
 
 let div28 = document.createElement('div');
 div28.className = "tilda";
@@ -997,26 +791,7 @@ p56.className = "textBut2";
 div28.append( p56 );
 p56.innerHTML = "\\" ;
 
-div28.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "\\";
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if (event.code == "Backslash" ) {
-        textarea.innerHTML +=  "\\";
-        div28.style.borderRadius = " 15px ";
-        div28.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div28.style.borderRadius = " 3px ";
-        div28.style.background = "black";
-    
-});
-
-
+//====
 
 let div29 = document.createElement('div');
 div29.className = "del";
@@ -1033,26 +808,15 @@ div29.append( p58 );
 p58.innerHTML = "Del" ;
 
 div29.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "";
+    textarea.innerHTML +=  " ";
 } ) ;
 
-document.addEventListener('keydown', function(event) {
-    if (event.code == "NumpadDecimal" ) {
-        textarea.innerHTML +=  "";
-        div29.style.borderRadius = " 15px ";
-        div29.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div29.style.borderRadius = " 3px ";
-        div29.style.background = "black";
-    
-});
-
-
-
+// document.addEventListener('keydown', function(event) {
+//     if (event.code == "KeyDel" ) {
+//         textarea.innerHTML +=  " ";
+      
+//     } ;
+// });
 
 /*=========*/
 
@@ -1074,26 +838,6 @@ let p60 = document.createElement('p');
 p60.className = "textButBackspace";
 div30.append( p60 );
 p60.innerHTML = "CapsLk" ;
-
-div30.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "";
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if (event.code == "CapsLock" ) {
-        textarea.innerHTML +=  "";
-        div30.style.borderRadius = " 15px ";
-        div30.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div30.style.borderRadius = " 3px ";
-        div30.style.background = "black";
-    
-});
-
 
 
 let div31 = document.createElement('div');
@@ -1117,16 +861,8 @@ div31.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyA" ) {
         textarea.innerHTML +=  "a";
-        div31.style.borderRadius = " 15px ";
-        div31.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div31.style.borderRadius = " 3px ";
-        div31.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1151,16 +887,8 @@ div32.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyS" ) {
         textarea.innerHTML +=  "s";
-        div32.style.borderRadius = " 15px ";
-        div32.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div32.style.borderRadius = " 3px ";
-        div32.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1187,16 +915,8 @@ div33.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyD" ) {
         textarea.innerHTML +=  "d";
-        div33.style.borderRadius = " 15px ";
-        div33.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div33.style.borderRadius = " 3px ";
-        div33.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1222,16 +942,8 @@ div34.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyF" ) {
         textarea.innerHTML +=  "f";
-        div34.style.borderRadius = " 15px ";
-        div34.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div34.style.borderRadius = " 3px ";
-        div34.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1257,16 +969,8 @@ div35.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyG" ) {
         textarea.innerHTML +=  "g";
-        div35.style.borderRadius = " 15px ";
-        div35.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div35.style.borderRadius = " 3px ";
-        div35.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1292,16 +996,8 @@ div36.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyH" ) {
         textarea.innerHTML +=  "h";
-        div36.style.borderRadius = " 15px ";
-        div36.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div36.style.borderRadius = " 3px ";
-        div36.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1327,16 +1023,8 @@ div37.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyJ" ) {
         textarea.innerHTML +=  "j";
-        div37.style.borderRadius = " 15px ";
-        div37.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div37.style.borderRadius = " 3px ";
-        div37.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1363,16 +1051,8 @@ div38.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyK" ) {
         textarea.innerHTML +=  "k";
-        div38.style.borderRadius = " 15px ";
-        div38.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div38.style.borderRadius = " 3px ";
-        div38.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1392,23 +1072,15 @@ p78.className = "textButBackspace";
 div39.append( p78 );
 p78.innerHTML = "L" ;
 
-div39.addEventListener( "click" , () => { 
+div38.addEventListener( "click" , () => { 
     textarea.innerHTML +=  "l";
 } ) ;
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyL" ) {
         textarea.innerHTML +=  "l";
-        div39.style.borderRadius = " 15px ";
-        div39.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div39.style.borderRadius = " 3px ";
-        div39.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1427,26 +1099,6 @@ p80.className = "textButBackspace";
 div40.append( p80 );
 p80.innerHTML = ";" ;
 
-div40.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  ";";
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if (event.code == "Semicolon" ) {
-        textarea.innerHTML +=  ";";
-        div40.style.borderRadius = " 15px ";
-        div40.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div40.style.borderRadius = " 3px ";
-        div40.style.background = "black";
-    
-});
-
-
 
 let div41 = document.createElement('div');
 div41.className = "tilda";
@@ -1462,27 +1114,6 @@ p82.className = "textButBackspace";
 div41.append( p82 );
 p82.innerHTML = "'" ;
 
-div41.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "'";
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if (event.code == "Quote" ) {
-        textarea.innerHTML +=  "'";
-        div41.style.borderRadius = " 15px ";
-        div41.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div41.style.borderRadius = " 3px ";
-        div41.style.background = "black";
-    
-});
-
-
-
 
 let div42 = document.createElement('div');
 div42.className = "enter";
@@ -1497,27 +1128,6 @@ let p84 = document.createElement('p');
 p84.className = "textButBackspace";
 div42.append( p84 );
 p84.innerHTML = "ENTER" ;
-
-
-div42.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "\n" ;
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if (event.code == "Enter" ) {
-        textarea.innerHTML +=  "\n" ;
-        div42.style.borderRadius = " 15px ";
-        div42.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div42.style.borderRadius = " 3px ";
-        div42.style.background = "black";
-    
-});
-
 
 
 /*========================*/
@@ -1555,26 +1165,6 @@ p88.className = "textButBackspace";
 div44.append( p88 );
 p88.innerHTML = "\\" ;
 
-div44.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "\\" ;
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if (event.code == "Backslash" ) {
-        textarea.innerHTML +=  "\\" ;
-        div44.style.borderRadius = " 15px ";
-        div44.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div44.style.borderRadius = " 3px ";
-        div44.style.background = "black";
-    
-});
-
-
 
 let div45 = document.createElement('div');
 div45.className = "tilda";
@@ -1597,16 +1187,8 @@ div45.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyZ" ) {
         textarea.innerHTML +=  "z";
-        div45.style.borderRadius = " 15px ";
-        div45.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div45.style.borderRadius = " 3px ";
-        div45.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1633,16 +1215,8 @@ div46.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyX" ) {
         textarea.innerHTML +=  "x";
-        div46.style.borderRadius = " 15px ";
-        div46.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div46.style.borderRadius = " 3px ";
-        div46.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1670,16 +1244,8 @@ div47.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyC" ) {
         textarea.innerHTML +=  "c";
-        div47.style.borderRadius = " 15px ";
-        div47.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div47.style.borderRadius = " 3px ";
-        div47.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1707,16 +1273,8 @@ div48.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyV" ) {
         textarea.innerHTML +=  "v";
-        div48.style.borderRadius = " 15px ";
-        div48.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div48.style.borderRadius = " 3px ";
-        div48.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1743,16 +1301,8 @@ div49.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyB" ) {
         textarea.innerHTML +=  "b";
-        div49.style.borderRadius = " 15px ";
-        div49.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div49.style.borderRadius = " 3px ";
-        div49.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1778,16 +1328,8 @@ div50.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyN" ) {
         textarea.innerHTML +=  "n";
-        div50.style.borderRadius = " 15px ";
-        div50.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div50.style.borderRadius = " 3px ";
-        div50.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1814,16 +1356,8 @@ div51.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyM" ) {
         textarea.innerHTML +=  "m";
-        div51.style.borderRadius = " 15px ";
-        div51.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div51.style.borderRadius = " 3px ";
-        div51.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -1843,25 +1377,6 @@ p104.className = "textButBackspace";
 div52.append( p104 );
 p104.innerHTML = "," ;
 
-div52.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  ",";
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if ( event.code == "NumpadDecimal" ) {
-        textarea.innerHTML +=  ",";
-        div52.style.borderRadius = " 15px ";
-        div52.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div52.style.borderRadius = " 3px ";
-        div52.style.background = "black";
-    
-});
-
 
 let div53 = document.createElement('div');
 div53.className = "tilda";
@@ -1877,27 +1392,6 @@ p106.className = "textButBackspace";
 div53.append( p106 );
 p106.innerHTML = "." ;
 
-div53.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  ".";
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if ( event.code == "Period" ) {
-        textarea.innerHTML +=  ".";
-        div53.style.borderRadius = " 15px ";
-        div53.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div53.style.borderRadius = " 3px ";
-        div53.style.background = "black";
-    
-});
-
-
-
 let div531 = document.createElement('div');
 div531.className = "tilda";
 section4.append( div531 );
@@ -1912,25 +1406,7 @@ p108.className = "textButBackspace";
 div531.append( p108 );
 p108.innerHTML = "/" ;
 
-div531.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "/";
-} ) ;
-
-document.addEventListener('keydown', function(event) {
-    if ( event.code == "Slash" ) {
-        textarea.innerHTML +=  "/";
-        div531.style.borderRadius = " 15px ";
-        div531.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div531.style.borderRadius = " 3px ";
-        div531.style.background = "black";
-    
-});
-
+// =======
 
 let div54 = document.createElement('div');
 div54.className = "artop";
@@ -1946,6 +1422,7 @@ p110.className = "textButBackspace";
 div54.append( p110 );
 p110.innerHTML = "▲" ;
 
+// ======
 
 let div55 = document.createElement('div');
 div55.className = "shift";
@@ -2025,16 +1502,8 @@ div59.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Space" ) {
         textarea.innerHTML +=  " ";
-        div59.style.borderRadius = " 15px ";
-        div59.style.background = "blue";
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    
-        div59.style.borderRadius = " 3px ";
-        div59.style.background = "black";
-    
+      
+    } ;
 });
 
 
@@ -2054,6 +1523,7 @@ p120.className = "textButBackspace";
 div60.append( p120 );
 p120.innerHTML = "Alt" ;
 
+// =====
 
 let div64 = document.createElement('div');
 div64.className = "ctrl";
@@ -2069,6 +1539,8 @@ p122.className = "textButBackspace";
 div64.append( p122 );
 p122.innerHTML = "Ctrl" ;
 
+// =====
+
 let div61 = document.createElement('div');
 div61.className = "arleft";
 section5.append( div61 );
@@ -2078,11 +1550,13 @@ p123.className = "textBut1";
 div61.append( p123 );
 p123.innerHTML = "" ;
 
+
 let p124 = document.createElement('p');
 p124.className = "textButBackspace";
 div61.append( p124 );
-p124.innerHTML = "ᐊ" ;
+p124.innerHTML = "&#9668" ;
 
+// =====
 
 let div62 = document.createElement('div');
 div62.className = "arbot";
@@ -2098,6 +1572,7 @@ p126.className = "textButBackspace";
 div62.append( p126 );
 p126.innerHTML = "▼" ;
 
+// =====
 
 let div63 = document.createElement('div');
 div63.className = "arright";
@@ -2111,9 +1586,7 @@ p127.innerHTML = "" ;
 let p128 = document.createElement('p');
 p128.className = "textButBackspace";
 div63.append( p128 );
-p128.innerHTML = "ᐅ" ;
-
-
+p128.innerHTML = "&#9658" ;
 
 /*=========*/
 
