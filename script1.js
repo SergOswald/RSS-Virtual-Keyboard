@@ -1,3 +1,6 @@
+// export * from "./script1.js";
+// import * from "./dopush.js";
+
 const KEYBOARD = {
     Backquote : "`",
     Digit1 : "1",
@@ -72,20 +75,25 @@ div1.addEventListener( "click" , () => {
 
 // };
 
-
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backquote" ) {
         textarea.innerHTML += KEYBOARD.Backquote ;
-      
+        div1.style.background = "blue" ;
     }
 });
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backquote" && ( event.code == "ShiftLeft" || event.code == "ShiftRight" )) {
         textarea.innerHTML += "~" ;
-      
+        div1.style.background = "blue" ;
     }
 });
+
+document.addEventListener('keyup', function(event) {
+    div1.style.background = "rgb(32, 27, 27)";
+});
+
+//====
 
 let div2 = document.createElement('div');
 div2.className = "tilda";
@@ -101,17 +109,23 @@ p4.className = "textBut2";
 div2.append( p4 );
 p4.innerHTML = "1" ;
 
-p4.addEventListener( "click" , () => { 
-    textarea.innerHTML += KEYBOARD.Digit1 ;
+div2.addEventListener( "click" , () => { 
+  textarea.innerHTML += KEYBOARD.Digit1 ;
 } )
 
 document.addEventListener('keydown', function(event) {
-    if (event.code == 'Digit1' ) {
-        textarea.innerHTML += KEYBOARD.Digit1 ;
+  if (event.code == 'Digit1' ) {
+    textarea.innerHTML += KEYBOARD.Digit1 ;
       //  p4.style.border-radius = "25px" ;
-    }
+    div2.style.background = "blue" ;
+  }
 });
 
+document.addEventListener('keyup', function(event) {
+  div2.style.background = "rgb(32, 27, 27)";
+});
+
+//====
 
 let div3 = document.createElement('div');
 div3.className = "tilda";
@@ -391,6 +405,8 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+//====
+
 let div14 = document.createElement('div');
 div14.className = "backspace";
 section1.append( div14 );
@@ -406,18 +422,17 @@ div14.append( p28 );
 p28.innerHTML = "Backspace" ;
 
 div14.addEventListener( "click" , () => { 
-    textarea.innerHTML =  textarea.innerHTML.slice( 1 );
+    textarea.innerHTML =  textarea.innerHTML.slice( 0 , textarea.innerHTML.length - 1 );
 } )
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backspace" ) {
-        textarea.innerHTML =  textarea.innerHTML.slice( 1 );
+        textarea.innerHTML =  textarea.innerHTML.slice( 0 , textarea.innerHTML.length - 1 );
       
     }
 });
 
 /*=======*/
-
 
 let section2 = document.createElement('div');
 section2.className = "section2";
@@ -438,17 +453,17 @@ div15.append( p30 );
 p30.innerHTML = "Tab" ;
 
 div15.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "  ";
+    textarea.innerHTML +=  "Tab";
 } )
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Tab" ) {
-        textarea.innerHTML +=  "  ";
+        textarea.innerHTML +=  "Tab";
       
     }
 });
 
-
+//====
 
 let div16 = document.createElement('div');
 div16.className = "tilda";
@@ -742,8 +757,8 @@ div26.addEventListener( "click" , () => {
 } ) ;
 
 document.addEventListener('keydown', function(event) {
-    if (event.code == "Key[" ) {
-        textarea.innerHTML +=  "[";
+    if (event.code == "BracketLeft" ) {
+        textarea.innerHTML += "[";
       
     } ;
 });
@@ -769,7 +784,7 @@ div27.addEventListener( "click" , () => {
 } ) ;
 
 document.addEventListener('keydown', function(event) {
-    if (event.code == "Key[" ) {
+    if (event.code == "BracketRight" ) {
         textarea.innerHTML +=  "]";
       
     } ;
@@ -789,7 +804,18 @@ p55.innerHTML = "/" ;
 let p56 = document.createElement('p');
 p56.className = "textBut2";
 div28.append( p56 );
-p56.innerHTML = "\\" ;
+p56.innerHTML = "\\";
+
+div28.addEventListener( "click" , () => { 
+    textarea.innerHTML += "\\";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Backslash" ) {
+        textarea.innerHTML += "\\";
+      
+    } ;
+});
 
 //====
 
@@ -807,9 +833,18 @@ p58.className = "textButBackspace";
 div29.append( p58 );
 p58.innerHTML = "Del" ;
 
+//не могу реализовать, только удаленіе целіком
+
 div29.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  " ";
+  textarea.innerHTML = "";
 } ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Delete" ) {
+        textarea.innerHTML = "";
+      
+    } ;
+});
 
 // document.addEventListener('keydown', function(event) {
 //     if (event.code == "KeyDel" ) {
@@ -1083,7 +1118,7 @@ document.addEventListener('keydown', function(event) {
     } ;
 });
 
-
+//====
 
 let div40 = document.createElement('div');
 div40.className = "tilda";
@@ -1099,6 +1134,18 @@ p80.className = "textButBackspace";
 div40.append( p80 );
 p80.innerHTML = ";" ;
 
+div40.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  ";";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Semicolon" ) {
+        textarea.innerHTML +=  ";";
+      
+    } ;
+});
+
+//====
 
 let div41 = document.createElement('div');
 div41.className = "tilda";
@@ -1114,6 +1161,18 @@ p82.className = "textButBackspace";
 div41.append( p82 );
 p82.innerHTML = "'" ;
 
+div41.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "'";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Quote" ) {
+        textarea.innerHTML +=  "'";
+      
+    } ;
+});
+
+//====
 
 let div42 = document.createElement('div');
 div42.className = "enter";
@@ -1128,6 +1187,12 @@ let p84 = document.createElement('p');
 p84.className = "textButBackspace";
 div42.append( p84 );
 p84.innerHTML = "ENTER" ;
+
+//не смог реалізовать
+
+div42.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "ENTER" ;
+} ) ;
 
 
 /*========================*/
@@ -1151,6 +1216,8 @@ p86.className = "textButBackspace";
 div43.append( p86 );
 p86.innerHTML = "Shift" ;
 
+//====
+
 let div44 = document.createElement('div');
 div44.className = "tilda";
 section4.append( div44 );
@@ -1164,6 +1231,20 @@ let p88 = document.createElement('p');
 p88.className = "textButBackspace";
 div44.append( p88 );
 p88.innerHTML = "\\" ;
+
+div44.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "\\";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Backslash" ) {
+        textarea.innerHTML +=  "\\";
+      
+    } ;
+});
+
+
+//====
 
 
 let div45 = document.createElement('div');
@@ -1360,8 +1441,7 @@ document.addEventListener('keydown', function(event) {
     } ;
 });
 
-
-
+//====
 
 let div52 = document.createElement('div');
 div52.className = "tilda";
@@ -1377,6 +1457,18 @@ p104.className = "textButBackspace";
 div52.append( p104 );
 p104.innerHTML = "," ;
 
+div52.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  ",";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Comma" ) {
+        textarea.innerHTML +=  ",";
+      
+    } ;
+});
+
+//====
 
 let div53 = document.createElement('div');
 div53.className = "tilda";
@@ -1392,6 +1484,19 @@ p106.className = "textButBackspace";
 div53.append( p106 );
 p106.innerHTML = "." ;
 
+div53.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  ".";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Period" ) {
+        textarea.innerHTML +=  ".";
+      
+    } ;
+});
+
+//====
+
 let div531 = document.createElement('div');
 div531.className = "tilda";
 section4.append( div531 );
@@ -1405,6 +1510,17 @@ let p108 = document.createElement('p');
 p108.className = "textButBackspace";
 div531.append( p108 );
 p108.innerHTML = "/" ;
+
+div531.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  "/";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Slash" ) {
+        textarea.innerHTML +=  "/";
+      
+    } ;
+});
 
 // =======
 
@@ -1506,7 +1622,7 @@ document.addEventListener('keydown', function(event) {
     } ;
 });
 
-
+//====
 
 
 let div60 = document.createElement('div');
@@ -1555,6 +1671,19 @@ let p124 = document.createElement('p');
 p124.className = "textButBackspace";
 div61.append( p124 );
 p124.innerHTML = "&#9668" ;
+
+div61.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  " ";
+} ) ;
+
+//стрелки не смог реализовать
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "ArrowLeft" ) {
+        //textarea.innerHTML +=  " ";
+      
+    } ;
+});
 
 // =====
 
