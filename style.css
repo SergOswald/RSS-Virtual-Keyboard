@@ -366,9 +366,17 @@ body {
 .section3 > div:hover, 
 .section4 > div:hover, 
 .section5 > div:hover {
+  background-color: rgb(25, 184, 216);
+  cursor: pointer;
+
+}
+
+
+/* .tilda:hover {
     background-color: rgb(25, 184, 216);
     cursor: pointer;
-}
+  
+} */
 
 .section2 {
     margin-right: 0;
