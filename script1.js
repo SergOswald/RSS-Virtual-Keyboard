@@ -23,18 +23,13 @@ h1.className = "texth1";
 header.append( h1 );
 h1.innerHTML = "RSS VIRTUAL KEYBOARD" ;
 
-
-
-
 let main = document.createElement('main');
 main.className = "main";
 div.append( main );
 
-
 let textarea = document.createElement('textarea');
 textarea.className = "textarea";
 main.append( textarea );
-
 
 let section = document.createElement('section');
 section.className = "keyboard";
@@ -64,6 +59,34 @@ div1.addEventListener( "click" , () => {
     textarea.innerHTML += KEYBOARD.Backquote ;
 } )
 
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Backquote" ) {
+        textarea.innerHTML += KEYBOARD.Backquote ;
+        div1.style.background = "blue" ;
+    }
+});
+
+document.addEventListener('keyup', function(event) {
+    div1.style.background = "rgb(32, 27, 27)";
+});
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Backquote" && ( event.code == "ShiftLeft" || event.code == "ShiftRight" )) {
+        textarea.innerHTML += "~" ;
+        div1.style.background = "blue" ;
+    }
+});
+
+
+
+
+
+// function keyupBackgr( event , dv ) {
+//     dv.style.background = "rgb(32, 27, 27)";
+// }
+
+// document.addEventListener( "keyup", keyupBackgr( div1 ) );
+
 // document.addEventListener('keydown', function(event) {
 //     if (event.code == "Backquote" ) {
 //         textarea.innerHTML += KEYBOARD.Backquote ;
@@ -74,24 +97,6 @@ div1.addEventListener( "click" , () => {
 // function keyDown() {
 
 // };
-
-document.addEventListener('keydown', function(event) {
-    if (event.code == "Backquote" ) {
-        textarea.innerHTML += KEYBOARD.Backquote ;
-        div1.style.background = "blue" ;
-    }
-});
-
-document.addEventListener('keydown', function(event) {
-    if (event.code == "Backquote" && ( event.code == "ShiftLeft" || event.code == "ShiftRight" )) {
-        textarea.innerHTML += "~" ;
-        div1.style.background = "blue" ;
-    }
-});
-
-document.addEventListener('keyup', function(event) {
-    div1.style.background = "rgb(32, 27, 27)";
-});
 
 //====
 
@@ -148,7 +153,8 @@ div3.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit2' ) {
         textarea.innerHTML += "2" ;
-      
+        div3.style.background = "blue" ;
+
     }
 });
 
@@ -173,7 +179,8 @@ div4.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit3' ) {
         textarea.innerHTML += "3" ;
-      
+        div4.style.background = "blue" ;
+  
     }
 });
 
@@ -198,7 +205,8 @@ div5.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit4' ) {
         textarea.innerHTML += "4" ;
-      
+        div5.style.background = "blue" ;
+  
     }
 });
 
@@ -225,7 +233,8 @@ div6.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit5' ) {
         textarea.innerHTML += "5" ;
-      
+        div6.style.background = "blue" ;
+  
     }
 });
 
@@ -251,7 +260,8 @@ div7.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit6' ) {
         textarea.innerHTML += "6" ;
-      
+        div7.style.background = "blue" ;
+  
     }
 });
 
@@ -276,7 +286,8 @@ div8.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit7' ) {
         textarea.innerHTML += "7" ;
-      
+        div8.style.background = "blue" ;
+  
     }
 });
 
@@ -301,7 +312,8 @@ div9.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit8' ) {
         textarea.innerHTML += "8" ;
-      
+        div9.style.background = "blue" ;
+  
     }
 });
 
@@ -326,7 +338,8 @@ div10.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit9' ) {
         textarea.innerHTML += "9" ;
-      
+        div10.style.background = "blue" ;
+  
     }
 });
 
@@ -351,7 +364,8 @@ div11.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Digit0' ) {
         textarea.innerHTML += "0" ;
-      
+        div11.style.background = "blue" ;
+  
     }
 });
 
@@ -376,7 +390,8 @@ div12.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Minus" ) {
         textarea.innerHTML += "-" ;
-      
+        div12.style.background = "blue" ;
+  
     }
 });
 
@@ -401,7 +416,8 @@ div13.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Equal" ) {
         textarea.innerHTML += "=" ;
-      
+        div13.style.background = "blue" ;
+  
     }
 });
 
@@ -428,7 +444,8 @@ div14.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backspace" ) {
         textarea.innerHTML =  textarea.innerHTML.slice( 0 , textarea.innerHTML.length - 1 );
-      
+        div14.style.background = "blue" ;
+  
     }
 });
 
@@ -459,7 +476,8 @@ div15.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Tab" ) {
         textarea.innerHTML +=  "Tab";
-      
+        div15.style.background = "blue" ;
+  
     }
 });
 
@@ -486,7 +504,8 @@ div16.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyQ" ) {
         textarea.innerHTML +=  "q";
-      
+        div16.style.background = "blue" ;
+  
     }
 });
 
@@ -514,7 +533,8 @@ div17.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyW" ) {
         textarea.innerHTML +=  "w";
-      
+        div17.style.background = "blue" ;
+  
     }
 });
 
@@ -542,7 +562,8 @@ div18.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyE" ) {
         textarea.innerHTML +=  "e";
-      
+        div18.style.background = "blue" ;
+  
     }
 });
 
@@ -569,7 +590,8 @@ div19.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyR" ) {
         textarea.innerHTML +=  "r";
-      
+        div19.style.background = "blue" ;
+  
     }
 });
 
@@ -597,7 +619,8 @@ div20.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyT" ) {
         textarea.innerHTML +=  "t";
-      
+        div20.style.background = "blue" ;
+  
     } ;
 });
 
@@ -624,7 +647,8 @@ div21.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyY" ) {
         textarea.innerHTML +=  "y";
-      
+        div21.style.background = "blue" ;
+  
     } ;
 });
 
@@ -651,7 +675,8 @@ div22.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyU" ) {
         textarea.innerHTML +=  "u";
-      
+        div22.style.background = "blue" ;
+  
     } ;
 });
 
@@ -678,7 +703,8 @@ div23.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyI" ) {
         textarea.innerHTML +=  "i";
-      
+        div23.style.background = "blue" ;
+  
     } ;
 });
 
@@ -705,7 +731,8 @@ div24.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyO" ) {
         textarea.innerHTML +=  "o";
-      
+        div24.style.background = "blue" ;
+  
     } ;
 });
 
@@ -732,7 +759,8 @@ div25.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyP" ) {
         textarea.innerHTML +=  "p";
-      
+        div25.style.background = "blue" ;
+ 
     } ;
 });
 
@@ -759,7 +787,8 @@ div26.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "BracketLeft" ) {
         textarea.innerHTML += "[";
-      
+        div26.style.background = "blue" ;
+  
     } ;
 });
 
@@ -786,7 +815,8 @@ div27.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "BracketRight" ) {
         textarea.innerHTML +=  "]";
-      
+        div27.style.background = "blue" ;
+  
     } ;
 });
 
@@ -813,7 +843,8 @@ div28.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backslash" ) {
         textarea.innerHTML += "\\";
-      
+        div28.style.background = "blue" ;
+  
     } ;
 });
 
@@ -836,13 +867,27 @@ p58.innerHTML = "Del" ;
 //не могу реализовать, только удаленіе целіком
 
 div29.addEventListener( "click" , () => { 
-  textarea.innerHTML = "";
+   // console.log( textarea.value.selectionStart ) ;
+  textarea.innerHTML += "";
 } ) ;
+
+textarea.onfocus = () => {
+console.log(textarea.value.length) ;
+  };
+
+/*
+textarea.onmousemove = function(event) {
+    event = event || window.event; // кроссбраузерность
+    console.log( event.offsetX ) ;
+   // textarea.innerHTML = event.offsetY;
+}
+*/
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "Delete" ) {
         textarea.innerHTML = "";
-      
+        div29.style.background = "blue" ;
+  
     } ;
 });
 
@@ -874,6 +919,21 @@ p60.className = "textButBackspace";
 div30.append( p60 );
 p60.innerHTML = "CapsLk" ;
 
+//кнопка не реализована
+
+div30.addEventListener( "click" , () => { 
+    textarea.innerHTML +=  " ";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "CapsLock" ) {
+        div30.style.background = "blue" ;
+  
+    } ;
+});
+
+//====
+
 
 let div31 = document.createElement('div');
 div31.className = "tilda";
@@ -896,7 +956,8 @@ div31.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyA" ) {
         textarea.innerHTML +=  "a";
-      
+        div31.style.background = "blue" ;
+  
     } ;
 });
 
@@ -922,7 +983,8 @@ div32.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyS" ) {
         textarea.innerHTML +=  "s";
-      
+        div32.style.background = "blue" ;
+  
     } ;
 });
 
@@ -950,7 +1012,8 @@ div33.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyD" ) {
         textarea.innerHTML +=  "d";
-      
+        div33.style.background = "blue" ;
+  
     } ;
 });
 
@@ -977,7 +1040,8 @@ div34.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyF" ) {
         textarea.innerHTML +=  "f";
-      
+        div34.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1004,7 +1068,8 @@ div35.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyG" ) {
         textarea.innerHTML +=  "g";
-      
+        div35.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1031,7 +1096,8 @@ div36.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyH" ) {
         textarea.innerHTML +=  "h";
-      
+        div36.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1058,7 +1124,8 @@ div37.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyJ" ) {
         textarea.innerHTML +=  "j";
-      
+        div37.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1086,12 +1153,13 @@ div38.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyK" ) {
         textarea.innerHTML +=  "k";
-      
+        div38.style.background = "blue" ;
+  
     } ;
 });
 
 
-
+//====
 
 let div39 = document.createElement('div');
 div39.className = "tilda";
@@ -1107,14 +1175,15 @@ p78.className = "textButBackspace";
 div39.append( p78 );
 p78.innerHTML = "L" ;
 
-div38.addEventListener( "click" , () => { 
+div39.addEventListener( "click" , () => { 
     textarea.innerHTML +=  "l";
 } ) ;
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyL" ) {
         textarea.innerHTML +=  "l";
-      
+        div39.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1141,7 +1210,8 @@ div40.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Semicolon" ) {
         textarea.innerHTML +=  ";";
-      
+        div40.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1168,7 +1238,8 @@ div41.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Quote" ) {
         textarea.innerHTML +=  "'";
-      
+        div41.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1191,8 +1262,16 @@ p84.innerHTML = "ENTER" ;
 //не смог реалізовать
 
 div42.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  "ENTER" ;
+    textarea.innerHTML +=  " " ;
 } ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "Enter" ) {
+        textarea.innerHTML +=  " ";
+        div42.style.background = "blue" ;
+  
+    } ;
+});
 
 
 /*========================*/
@@ -1215,6 +1294,18 @@ let p86 = document.createElement('p');
 p86.className = "textButBackspace";
 div43.append( p86 );
 p86.innerHTML = "Shift" ;
+
+div43.addEventListener( "click" , () => { 
+    // textarea.innerHTML +=  "/";
+ } ) ;
+ 
+ document.addEventListener('keydown', function(event) {
+     if (event.code == "ShiftLeft" ) {
+     //    textarea.innerHTML +=  "/";
+         div43.style.background = "blue" ;
+   
+     } ;
+ });
 
 //====
 
@@ -1239,13 +1330,12 @@ div44.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Backslash" ) {
         textarea.innerHTML +=  "\\";
-      
+        div44.style.background = "blue" ;
+  
     } ;
 });
 
-
 //====
-
 
 let div45 = document.createElement('div');
 div45.className = "tilda";
@@ -1268,7 +1358,8 @@ div45.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyZ" ) {
         textarea.innerHTML +=  "z";
-      
+        div45.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1296,7 +1387,8 @@ div46.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyX" ) {
         textarea.innerHTML +=  "x";
-      
+        div46.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1325,7 +1417,8 @@ div47.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyC" ) {
         textarea.innerHTML +=  "c";
-      
+        div47.style.background = "blue" ;
+ 
     } ;
 });
 
@@ -1354,7 +1447,8 @@ div48.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyV" ) {
         textarea.innerHTML +=  "v";
-      
+        div48.style.background = "blue" ;
+ 
     } ;
 });
 
@@ -1382,7 +1476,8 @@ div49.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyB" ) {
         textarea.innerHTML +=  "b";
-      
+        div49.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1409,7 +1504,8 @@ div50.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyN" ) {
         textarea.innerHTML +=  "n";
-      
+        div50.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1437,7 +1533,8 @@ div51.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "KeyM" ) {
         textarea.innerHTML +=  "m";
-      
+        div51.style.background = "blue" ;
+ 
     } ;
 });
 
@@ -1464,7 +1561,8 @@ div52.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Comma" ) {
         textarea.innerHTML +=  ",";
-      
+        div52.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1491,7 +1589,8 @@ div53.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Period" ) {
         textarea.innerHTML +=  ".";
-      
+        div53.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1518,7 +1617,8 @@ div531.addEventListener( "click" , () => {
 document.addEventListener('keydown', function(event) {
     if (event.code == "Slash" ) {
         textarea.innerHTML +=  "/";
-      
+        div531.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1538,6 +1638,18 @@ p110.className = "textButBackspace";
 div54.append( p110 );
 p110.innerHTML = "▲" ;
 
+div54.addEventListener( "click" , () => { 
+    // textarea.innerHTML +=  "/";
+ } ) ;
+ 
+document.addEventListener('keydown', function(event) {
+  if (event.code == "ArrowUp" ) {
+     //    textarea.innerHTML +=  "/";
+    div54.style.background = "blue" ;
+   
+  } ;
+});
+
 // ======
 
 let div55 = document.createElement('div');
@@ -1554,6 +1666,17 @@ p112.className = "textButBackspace";
 div55.append( p112 );
 p112.innerHTML = "Shift" ;
 
+div55.addEventListener( "click" , () => { 
+   // textarea.innerHTML +=  "/";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "ShiftRight" ) {
+    //    textarea.innerHTML +=  "/";
+        div55.style.background = "blue" ;
+  
+    } ;
+});
 
 /*=============*/
 
@@ -1576,6 +1699,22 @@ p114.className = "textButBackspace";
 div56.append( p114 );
 p114.innerHTML = "Ctrl" ;
 
+div56.addEventListener( "click" , () => { 
+    // textarea.innerHTML +=  "/";
+ } ) ;
+ 
+document.addEventListener('keydown', function(event) {
+     if (event.code == "ControlLeft" ) {
+     //    textarea.innerHTML +=  "/";
+         div56.style.background = "blue" ;
+   
+     } ;
+});
+
+//====
+
+//не реализован
+
 let div57 = document.createElement('div');
 div57.className = "win";
 section5.append( div57 );
@@ -1590,6 +1729,21 @@ p116.className = "textButBackspace";
 div57.append( p116 );
 p116.innerHTML = "Win" ;
 
+div57.addEventListener( "click" , () => { 
+    // textarea.innerHTML +=  "/";
+} ) ;
+ 
+document.addEventListener('keydown', function(event) {
+  if (event.code == "MetaLeft" ) {
+//    textarea.innerHTML +=  "/";
+    div57.style.background = "blue" ;
+   
+  } ;
+});
+
+//"ControlLeft
+
+//====
 
 let div58 = document.createElement('div');
 div58.className = "alt";
@@ -1605,22 +1759,26 @@ p118.className = "textButBackspace";
 div58.append( p118 );
 p118.innerHTML = "Alt" ;
 
-
+//====
 
 let div59 = document.createElement('div');
 div59.className = "prob";
 section5.append( div59 );
 
+//не смог реализовать
+
 div59.addEventListener( "click" , () => { 
     textarea.innerHTML +=  " ";
 } ) ;
 
-document.addEventListener('keydown', function(event) {
-    if (event.code == "Space" ) {
-        textarea.innerHTML +=  " ";
+
+
+// document.addEventListener('keydown', function(event) {
+//     if (event.code == "Space" ) {
+//         textarea.innerHTML +=  " ";
       
-    } ;
-});
+//     } ;
+// });
 
 //====
 
@@ -1666,22 +1824,22 @@ p123.className = "textBut1";
 div61.append( p123 );
 p123.innerHTML = "" ;
 
-
 let p124 = document.createElement('p');
 p124.className = "textButBackspace";
 div61.append( p124 );
 p124.innerHTML = "&#9668" ;
 
-div61.addEventListener( "click" , () => { 
-    textarea.innerHTML +=  " ";
-} ) ;
-
 //стрелки не смог реализовать
+
+div61.addEventListener( "click" , () => { 
+//    textarea.innerHTML +=  " ";
+} ) ;
 
 document.addEventListener('keydown', function(event) {
     if (event.code == "ArrowLeft" ) {
         //textarea.innerHTML +=  " ";
-      
+        div61.style.background = "blue" ;
+  
     } ;
 });
 
@@ -1701,6 +1859,18 @@ p126.className = "textButBackspace";
 div62.append( p126 );
 p126.innerHTML = "▼" ;
 
+div62.addEventListener( "click" , () => { 
+    //    textarea.innerHTML +=  " ";
+    } ) ;
+    
+document.addEventListener('keydown', function(event) {
+  if (event.code == "ArrowDown" ) {
+    //textarea.innerHTML +=  " ";
+    div62.style.background = "blue" ;
+      
+  } ;
+});
+
 // =====
 
 let div63 = document.createElement('div');
@@ -1716,6 +1886,18 @@ let p128 = document.createElement('p');
 p128.className = "textButBackspace";
 div63.append( p128 );
 p128.innerHTML = "&#9658" ;
+
+div63.addEventListener( "click" , () => { 
+//    textarea.innerHTML +=  " ";
+} ) ;
+
+document.addEventListener('keydown', function(event) {
+    if (event.code == "ArrowRight" ) {
+        //textarea.innerHTML +=  " ";
+        div63.style.background = "blue" ;
+  
+    } ;
+});
 
 /*=========*/
 
