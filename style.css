@@ -2,8 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-
-
 }
 
 .wripper {
@@ -361,6 +359,8 @@ body {
 
 }
 
+/*
+
 .section1 > div:hover, 
 .section2 > div:hover, 
 .section3 > div:hover, 
@@ -371,6 +371,7 @@ body {
 
 }
 
+*/
 
 /* .tilda:hover {
     background-color: rgb(25, 184, 216);
