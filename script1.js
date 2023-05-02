@@ -55,7 +55,33 @@ p2.innerHTML = "`";
 
 div1.addEventListener("click", () => {
     textarea.innerHTML += KEYBOARD.Backquote;
+ 
 })
+
+
+div1.addEventListener("mousedown", () => {
+  div1.style.borderTopRightRadius = "10px";
+  div1.style.borderBottomRightRadius = "10px";
+  div1.style.borderBottomLeftRadius = "10px";
+  div1.style.borderTopLeftRadius = "10px";    
+})
+
+div1.addEventListener("mouseup", () => {
+  div1.style.borderTopRightRadius = "3px";
+  div1.style.borderBottomRightRadius = "3px";
+  div1.style.borderBottomLeftRadius = "3px";
+  div1.style.borderTopLeftRadius = "3px";    
+})
+
+div1.addEventListener("mouseover", () => {
+  div1.style.background = "rgb(25, 184, 216)";
+  div1.style.cursor = "pointer";
+})
+
+div1.addEventListener("mouseout", () => {
+  div1.style.background = "rgb(32, 27, 27)";
+})
+
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Backquote") {
@@ -128,6 +154,29 @@ div2.addEventListener("click", () => {
     textarea.innerHTML += KEYBOARD.Digit1;
 })
 
+div2.addEventListener("mousedown", () => {
+    div2.style.borderTopRightRadius = "10px";
+    div2.style.borderBottomRightRadius = "10px";
+    div2.style.borderBottomLeftRadius = "10px";
+    div2.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div2.addEventListener("mouseup", () => {
+    div2.style.borderTopRightRadius = "3px";
+    div2.style.borderBottomRightRadius = "3px";
+    div2.style.borderBottomLeftRadius = "3px";
+    div2.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div2.addEventListener("mouseover", () => {
+    div2.style.background = "rgb(25, 184, 216)";
+    div2.style.cursor = "pointer";
+  })
+  
+  div2.addEventListener("mouseout", () => {
+    div2.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit1') {
         textarea.innerHTML += KEYBOARD.Digit1;
@@ -166,6 +215,31 @@ p6.innerHTML = "2";
 div3.addEventListener("click", () => {
     textarea.innerHTML += "2";
 })
+
+
+div3.addEventListener("mousedown", () => {
+    div3.style.borderTopRightRadius = "10px";
+    div3.style.borderBottomRightRadius = "10px";
+    div3.style.borderBottomLeftRadius = "10px";
+    div3.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div3.addEventListener("mouseup", () => {
+    div3.style.borderTopRightRadius = "3px";
+    div3.style.borderBottomRightRadius = "3px";
+    div3.style.borderBottomLeftRadius = "3px";
+    div3.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div3.addEventListener("mouseover", () => {
+    div3.style.background = "rgb(25, 184, 216)";
+    div3.style.cursor = "pointer";
+  })
+  
+  div3.addEventListener("mouseout", () => {
+    div3.style.background = "rgb(32, 27, 27)";
+  })
+
 
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit2') {
@@ -206,6 +280,30 @@ div4.addEventListener("click", () => {
     textarea.innerHTML += "3";
 })
 
+div4.addEventListener("mousedown", () => {
+    div4.style.borderTopRightRadius = "10px";
+    div4.style.borderBottomRightRadius = "10px";
+    div4.style.borderBottomLeftRadius = "10px";
+    div4.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div4.addEventListener("mouseup", () => {
+    div4.style.borderTopRightRadius = "3px";
+    div4.style.borderBottomRightRadius = "3px";
+    div4.style.borderBottomLeftRadius = "3px";
+    div4.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div4.addEventListener("mouseover", () => {
+    div4.style.background = "rgb(25, 184, 216)";
+    div4.style.cursor = "pointer";
+  })
+  
+  div4.addEventListener("mouseout", () => {
+    div4.style.background = "rgb(32, 27, 27)";
+  })
+
+
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit3') {
         textarea.innerHTML += "3";
@@ -245,6 +343,30 @@ div5.addEventListener("click", () => {
     textarea.innerHTML += "4";
 })
 
+div5.addEventListener("mousedown", () => {
+    div5.style.borderTopRightRadius = "10px";
+    div5.style.borderBottomRightRadius = "10px";
+    div5.style.borderBottomLeftRadius = "10px";
+    div5.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div5.addEventListener("mouseup", () => {
+    div5.style.borderTopRightRadius = "3px";
+    div5.style.borderBottomRightRadius = "3px";
+    div5.style.borderBottomLeftRadius = "3px";
+    div5.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div5.addEventListener("mouseover", () => {
+    div5.style.background = "rgb(25, 184, 216)";
+    div5.style.cursor = "pointer";
+  })
+  
+  div5.addEventListener("mouseout", () => {
+    div5.style.background = "rgb(32, 27, 27)";
+  })
+
+
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit4') {
         textarea.innerHTML += "4";
@@ -283,6 +405,30 @@ p12.innerHTML = "5";
 div6.addEventListener("click", () => {
     textarea.innerHTML += "5";
 })
+
+div6.addEventListener("mousedown", () => {
+    div6.style.borderTopRightRadius = "10px";
+    div6.style.borderBottomRightRadius = "10px";
+    div6.style.borderBottomLeftRadius = "10px";
+    div6.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div6.addEventListener("mouseup", () => {
+    div6.style.borderTopRightRadius = "3px";
+    div6.style.borderBottomRightRadius = "3px";
+    div6.style.borderBottomLeftRadius = "3px";
+    div6.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div6.addEventListener("mouseover", () => {
+    div6.style.background = "rgb(25, 184, 216)";
+    div6.style.cursor = "pointer";
+  })
+  
+  div6.addEventListener("mouseout", () => {
+    div6.style.background = "rgb(32, 27, 27)";
+  })
+
 
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit5') {
@@ -324,6 +470,30 @@ div7.addEventListener("click", () => {
     textarea.innerHTML += "6";
 })
 
+
+div7.addEventListener("mousedown", () => {
+    div7.style.borderTopRightRadius = "10px";
+    div7.style.borderBottomRightRadius = "10px";
+    div7.style.borderBottomLeftRadius = "10px";
+    div7.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div7.addEventListener("mouseup", () => {
+    div7.style.borderTopRightRadius = "3px";
+    div7.style.borderBottomRightRadius = "3px";
+    div7.style.borderBottomLeftRadius = "3px";
+    div7.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div7.addEventListener("mouseover", () => {
+    div7.style.background = "rgb(25, 184, 216)";
+    div7.style.cursor = "pointer";
+  })
+  
+  div7.addEventListener("mouseout", () => {
+    div7.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit6') {
         textarea.innerHTML += "6";
@@ -362,6 +532,29 @@ p16.innerHTML = "7";
 div8.addEventListener("click", () => {
     textarea.innerHTML += "7";
 })
+
+div8.addEventListener("mousedown", () => {
+    div8.style.borderTopRightRadius = "10px";
+    div8.style.borderBottomRightRadius = "10px";
+    div8.style.borderBottomLeftRadius = "10px";
+    div8.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div8.addEventListener("mouseup", () => {
+    div8.style.borderTopRightRadius = "3px";
+    div8.style.borderBottomRightRadius = "3px";
+    div8.style.borderBottomLeftRadius = "3px";
+    div8.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div8.addEventListener("mouseover", () => {
+    div8.style.background = "rgb(25, 184, 216)";
+    div8.style.cursor = "pointer";
+  })
+  
+  div8.addEventListener("mouseout", () => {
+    div8.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit7') {
@@ -402,6 +595,29 @@ div9.addEventListener("click", () => {
     textarea.innerHTML += "8";
 })
 
+div9.addEventListener("mousedown", () => {
+    div9.style.borderTopRightRadius = "10px";
+    div9.style.borderBottomRightRadius = "10px";
+    div9.style.borderBottomLeftRadius = "10px";
+    div9.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div9.addEventListener("mouseup", () => {
+    div9.style.borderTopRightRadius = "3px";
+    div9.style.borderBottomRightRadius = "3px";
+    div9.style.borderBottomLeftRadius = "3px";
+    div9.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div9.addEventListener("mouseover", () => {
+    div9.style.background = "rgb(25, 184, 216)";
+    div9.style.cursor = "pointer";
+  })
+  
+  div9.addEventListener("mouseout", () => {
+    div9.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit8') {
         textarea.innerHTML += "8";
@@ -440,6 +656,29 @@ p20.innerHTML = "9";
 div10.addEventListener("click", () => {
     textarea.innerHTML += "9";
 })
+
+div10.addEventListener("mousedown", () => {
+    div10.style.borderTopRightRadius = "10px";
+    div10.style.borderBottomRightRadius = "10px";
+    div10.style.borderBottomLeftRadius = "10px";
+    div10.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div10.addEventListener("mouseup", () => {
+    div10.style.borderTopRightRadius = "3px";
+    div10.style.borderBottomRightRadius = "3px";
+    div10.style.borderBottomLeftRadius = "3px";
+    div10.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div10.addEventListener("mouseover", () => {
+    div10.style.background = "rgb(25, 184, 216)";
+    div10.style.cursor = "pointer";
+  })
+  
+  div10.addEventListener("mouseout", () => {
+    div10.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit9') {
@@ -480,6 +719,30 @@ div11.addEventListener("click", () => {
     textarea.innerHTML += "0";
 })
 
+div11.addEventListener("mousedown", () => {
+    div11.style.borderTopRightRadius = "10px";
+    div11.style.borderBottomRightRadius = "10px";
+    div11.style.borderBottomLeftRadius = "10px";
+    div11.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div11.addEventListener("mouseup", () => {
+    div11.style.borderTopRightRadius = "3px";
+    div11.style.borderBottomRightRadius = "3px";
+    div11.style.borderBottomLeftRadius = "3px";
+    div11.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div11.addEventListener("mouseover", () => {
+    div11.style.background = "rgb(25, 184, 216)";
+    div11.style.cursor = "pointer";
+  })
+  
+  div11.addEventListener("mouseout", () => {
+    div11.style.background = "rgb(32, 27, 27)";
+  })
+
+
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Digit0') {
         textarea.innerHTML += "0";
@@ -518,6 +781,30 @@ p24.innerHTML = "-";
 div12.addEventListener("click", () => {
     textarea.innerHTML += "-";
 })
+
+div12.addEventListener("mousedown", () => {
+    div12.style.borderTopRightRadius = "10px";
+    div12.style.borderBottomRightRadius = "10px";
+    div12.style.borderBottomLeftRadius = "10px";
+    div12.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div12.addEventListener("mouseup", () => {
+    div12.style.borderTopRightRadius = "3px";
+    div12.style.borderBottomRightRadius = "3px";
+    div12.style.borderBottomLeftRadius = "3px";
+    div12.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div12.addEventListener("mouseover", () => {
+    div12.style.background = "rgb(25, 184, 216)";
+    div12.style.cursor = "pointer";
+  })
+  
+  div12.addEventListener("mouseout", () => {
+    div12.style.background = "rgb(32, 27, 27)";
+  })
+
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Minus") {
@@ -558,6 +845,30 @@ div13.addEventListener("click", () => {
     textarea.innerHTML += "=";
 })
 
+div13.addEventListener("mousedown", () => {
+    div13.style.borderTopRightRadius = "10px";
+    div13.style.borderBottomRightRadius = "10px";
+    div13.style.borderBottomLeftRadius = "10px";
+    div13.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div13.addEventListener("mouseup", () => {
+    div13.style.borderTopRightRadius = "3px";
+    div13.style.borderBottomRightRadius = "3px";
+    div13.style.borderBottomLeftRadius = "3px";
+    div13.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div13.addEventListener("mouseover", () => {
+    div13.style.background = "rgb(25, 184, 216)";
+    div13.style.cursor = "pointer";
+  })
+  
+  div13.addEventListener("mouseout", () => {
+    div13.style.background = "rgb(32, 27, 27)";
+  })
+
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "Equal") {
         textarea.innerHTML += "=";
@@ -596,6 +907,29 @@ p28.innerHTML = "Backspace";
 div14.addEventListener("click", () => {
     textarea.innerHTML = textarea.innerHTML.slice(0, textarea.innerHTML.length - 1);
 })
+
+div14.addEventListener("mousedown", () => {
+    div14.style.borderTopRightRadius = "10px";
+    div14.style.borderBottomRightRadius = "10px";
+    div14.style.borderBottomLeftRadius = "10px";
+    div14.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div14.addEventListener("mouseup", () => {
+    div14.style.borderTopRightRadius = "3px";
+    div14.style.borderBottomRightRadius = "3px";
+    div14.style.borderBottomLeftRadius = "3px";
+    div14.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div14.addEventListener("mouseover", () => {
+    div14.style.background = "rgb(25, 184, 216)";
+    div14.style.cursor = "pointer";
+  })
+  
+  div14.addEventListener("mouseout", () => {
+    div14.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Backspace") {
@@ -640,6 +974,29 @@ div15.addEventListener("click", () => {
     textarea.innerHTML += "Tab";
 })
 
+div15.addEventListener("mousedown", () => {
+    div15.style.borderTopRightRadius = "10px";
+    div15.style.borderBottomRightRadius = "10px";
+    div15.style.borderBottomLeftRadius = "10px";
+    div15.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div15.addEventListener("mouseup", () => {
+    div15.style.borderTopRightRadius = "3px";
+    div15.style.borderBottomRightRadius = "3px";
+    div15.style.borderBottomLeftRadius = "3px";
+    div15.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div15.addEventListener("mouseover", () => {
+    div15.style.background = "rgb(25, 184, 216)";
+    div15.style.cursor = "pointer";
+  })
+  
+  div15.addEventListener("mouseout", () => {
+    div15.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "Tab") {
         textarea.innerHTML += "Tab";
@@ -678,6 +1035,30 @@ p32.innerHTML = "Q";
 div16.addEventListener("click", () => {
     textarea.innerHTML += "q";
 });
+
+div16.addEventListener("mousedown", () => {
+    div16.style.borderTopRightRadius = "10px";
+    div16.style.borderBottomRightRadius = "10px";
+    div16.style.borderBottomLeftRadius = "10px";
+    div16.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div16.addEventListener("mouseup", () => {
+    div16.style.borderTopRightRadius = "3px";
+    div16.style.borderBottomRightRadius = "3px";
+    div16.style.borderBottomLeftRadius = "3px";
+    div16.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div16.addEventListener("mouseover", () => {
+    div16.style.background = "rgb(25, 184, 216)";
+    div16.style.cursor = "pointer";
+  })
+  
+  div16.addEventListener("mouseout", () => {
+    div16.style.background = "rgb(32, 27, 27)";
+  })
+
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyQ") {
@@ -718,6 +1099,29 @@ div17.addEventListener("click", () => {
     textarea.innerHTML += "w";
 });
 
+div17.addEventListener("mousedown", () => {
+    div17.style.borderTopRightRadius = "10px";
+    div17.style.borderBottomRightRadius = "10px";
+    div17.style.borderBottomLeftRadius = "10px";
+    div17.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div17.addEventListener("mouseup", () => {
+    div17.style.borderTopRightRadius = "3px";
+    div17.style.borderBottomRightRadius = "3px";
+    div17.style.borderBottomLeftRadius = "3px";
+    div17.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div17.addEventListener("mouseover", () => {
+    div17.style.background = "rgb(25, 184, 216)";
+    div17.style.cursor = "pointer";
+  })
+  
+  div17.addEventListener("mouseout", () => {
+    div17.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyW") {
         textarea.innerHTML += "w";
@@ -756,6 +1160,29 @@ p36.innerHTML = "E";
 div18.addEventListener("click", () => {
     textarea.innerHTML += "e";
 });
+
+div18.addEventListener("mousedown", () => {
+    div18.style.borderTopRightRadius = "10px";
+    div18.style.borderBottomRightRadius = "10px";
+    div18.style.borderBottomLeftRadius = "10px";
+    div18.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div18.addEventListener("mouseup", () => {
+    div18.style.borderTopRightRadius = "3px";
+    div18.style.borderBottomRightRadius = "3px";
+    div18.style.borderBottomLeftRadius = "3px";
+    div18.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div18.addEventListener("mouseover", () => {
+    div18.style.background = "rgb(25, 184, 216)";
+    div18.style.cursor = "pointer";
+  })
+  
+  div18.addEventListener("mouseout", () => {
+    div18.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyE") {
@@ -796,6 +1223,30 @@ div19.addEventListener("click", () => {
     textarea.innerHTML += "r";
 });
 
+
+div19.addEventListener("mousedown", () => {
+    div19.style.borderTopRightRadius = "10px";
+    div19.style.borderBottomRightRadius = "10px";
+    div19.style.borderBottomLeftRadius = "10px";
+    div19.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div19.addEventListener("mouseup", () => {
+    div19.style.borderTopRightRadius = "3px";
+    div19.style.borderBottomRightRadius = "3px";
+    div19.style.borderBottomLeftRadius = "3px";
+    div19.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div19.addEventListener("mouseover", () => {
+    div19.style.background = "rgb(25, 184, 216)";
+    div19.style.cursor = "pointer";
+  })
+  
+  div19.addEventListener("mouseout", () => {
+    div19.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyR") {
         textarea.innerHTML += "r";
@@ -834,6 +1285,30 @@ p40.innerHTML = "T";
 div20.addEventListener("click", () => {
     textarea.innerHTML += "t";
 });
+
+
+div20.addEventListener("mousedown", () => {
+    div20.style.borderTopRightRadius = "10px";
+    div20.style.borderBottomRightRadius = "10px";
+    div20.style.borderBottomLeftRadius = "10px";
+    div20.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div20.addEventListener("mouseup", () => {
+    div20.style.borderTopRightRadius = "3px";
+    div20.style.borderBottomRightRadius = "3px";
+    div20.style.borderBottomLeftRadius = "3px";
+    div20.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div20.addEventListener("mouseover", () => {
+    div20.style.background = "rgb(25, 184, 216)";
+    div20.style.cursor = "pointer";
+  })
+  
+  div20.addEventListener("mouseout", () => {
+    div20.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyT") {
@@ -874,6 +1349,30 @@ div21.addEventListener("click", () => {
     textarea.innerHTML += "y";
 });
 
+
+div21.addEventListener("mousedown", () => {
+    div21.style.borderTopRightRadius = "10px";
+    div21.style.borderBottomRightRadius = "10px";
+    div21.style.borderBottomLeftRadius = "10px";
+    div21.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div21.addEventListener("mouseup", () => {
+    div21.style.borderTopRightRadius = "3px";
+    div21.style.borderBottomRightRadius = "3px";
+    div21.style.borderBottomLeftRadius = "3px";
+    div21.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div21.addEventListener("mouseover", () => {
+    div21.style.background = "rgb(25, 184, 216)";
+    div21.style.cursor = "pointer";
+  })
+  
+  div21.addEventListener("mouseout", () => {
+    div21.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyY") {
         textarea.innerHTML += "y";
@@ -912,6 +1411,30 @@ p44.innerHTML = "U";
 div22.addEventListener("click", () => {
     textarea.innerHTML += "u";
 });
+
+
+div22.addEventListener("mousedown", () => {
+    div22.style.borderTopRightRadius = "10px";
+    div22.style.borderBottomRightRadius = "10px";
+    div22.style.borderBottomLeftRadius = "10px";
+    div22.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div22.addEventListener("mouseup", () => {
+    div22.style.borderTopRightRadius = "3px";
+    div22.style.borderBottomRightRadius = "3px";
+    div22.style.borderBottomLeftRadius = "3px";
+    div22.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div22.addEventListener("mouseover", () => {
+    div22.style.background = "rgb(25, 184, 216)";
+    div22.style.cursor = "pointer";
+  })
+  
+  div22.addEventListener("mouseout", () => {
+    div22.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyU") {
@@ -952,6 +1475,31 @@ div23.addEventListener("click", () => {
     textarea.innerHTML += "i";
 });
 
+
+div23.addEventListener("mousedown", () => {
+    div23.style.borderTopRightRadius = "10px";
+    div23.style.borderBottomRightRadius = "10px";
+    div23.style.borderBottomLeftRadius = "10px";
+    div23.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div23.addEventListener("mouseup", () => {
+    div23.style.borderTopRightRadius = "3px";
+    div23.style.borderBottomRightRadius = "3px";
+    div23.style.borderBottomLeftRadius = "3px";
+    div23.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div23.addEventListener("mouseover", () => {
+    div23.style.background = "rgb(25, 184, 216)";
+    div23.style.cursor = "pointer";
+  })
+  
+  div23.addEventListener("mouseout", () => {
+    div23.style.background = "rgb(32, 27, 27)";
+  })
+
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyI") {
         textarea.innerHTML += "i";
@@ -990,6 +1538,30 @@ p48.innerHTML = "O";
 div24.addEventListener("click", () => {
     textarea.innerHTML += "o";
 });
+
+div24.addEventListener("mousedown", () => {
+    div24.style.borderTopRightRadius = "10px";
+    div24.style.borderBottomRightRadius = "10px";
+    div24.style.borderBottomLeftRadius = "10px";
+    div24.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div24.addEventListener("mouseup", () => {
+    div24.style.borderTopRightRadius = "3px";
+    div24.style.borderBottomRightRadius = "3px";
+    div24.style.borderBottomLeftRadius = "3px";
+    div24.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div24.addEventListener("mouseover", () => {
+    div24.style.background = "rgb(25, 184, 216)";
+    div24.style.cursor = "pointer";
+  })
+  
+  div24.addEventListener("mouseout", () => {
+    div24.style.background = "rgb(32, 27, 27)";
+  })
+
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyO") {
@@ -1030,6 +1602,30 @@ div25.addEventListener("click", () => {
     textarea.innerHTML += "p";
 });
 
+
+div25.addEventListener("mousedown", () => {
+    div25.style.borderTopRightRadius = "10px";
+    div25.style.borderBottomRightRadius = "10px";
+    div25.style.borderBottomLeftRadius = "10px";
+    div25.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div25.addEventListener("mouseup", () => {
+    div25.style.borderTopRightRadius = "3px";
+    div25.style.borderBottomRightRadius = "3px";
+    div25.style.borderBottomLeftRadius = "3px";
+    div25.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div25.addEventListener("mouseover", () => {
+    div25.style.background = "rgb(25, 184, 216)";
+    div25.style.cursor = "pointer";
+  })
+  
+  div25.addEventListener("mouseout", () => {
+    div25.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyP") {
         textarea.innerHTML += "p";
@@ -1068,6 +1664,30 @@ p52.innerHTML = "[";
 div26.addEventListener("click", () => {
     textarea.innerHTML += "[";
 });
+
+
+div26.addEventListener("mousedown", () => {
+    div26.style.borderTopRightRadius = "10px";
+    div26.style.borderBottomRightRadius = "10px";
+    div26.style.borderBottomLeftRadius = "10px";
+    div26.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div26.addEventListener("mouseup", () => {
+    div26.style.borderTopRightRadius = "3px";
+    div26.style.borderBottomRightRadius = "3px";
+    div26.style.borderBottomLeftRadius = "3px";
+    div26.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div26.addEventListener("mouseover", () => {
+    div26.style.background = "rgb(25, 184, 216)";
+    div26.style.cursor = "pointer";
+  })
+  
+  div26.addEventListener("mouseout", () => {
+    div26.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "BracketLeft") {
@@ -1108,6 +1728,30 @@ div27.addEventListener("click", () => {
     textarea.innerHTML += "]";
 });
 
+
+div27.addEventListener("mousedown", () => {
+    div27.style.borderTopRightRadius = "10px";
+    div27.style.borderBottomRightRadius = "10px";
+    div27.style.borderBottomLeftRadius = "10px";
+    div27.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div27.addEventListener("mouseup", () => {
+    div27.style.borderTopRightRadius = "3px";
+    div27.style.borderBottomRightRadius = "3px";
+    div27.style.borderBottomLeftRadius = "3px";
+    div27.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div27.addEventListener("mouseover", () => {
+    div27.style.background = "rgb(25, 184, 216)";
+    div27.style.cursor = "pointer";
+  })
+  
+  div27.addEventListener("mouseout", () => {
+    div27.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "BracketRight") {
         textarea.innerHTML += "]";
@@ -1146,6 +1790,29 @@ p56.innerHTML = "\\";
 div28.addEventListener("click", () => {
     textarea.innerHTML += "\\";
 });
+
+div28.addEventListener("mousedown", () => {
+    div28.style.borderTopRightRadius = "10px";
+    div28.style.borderBottomRightRadius = "10px";
+    div28.style.borderBottomLeftRadius = "10px";
+    div28.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div28.addEventListener("mouseup", () => {
+    div28.style.borderTopRightRadius = "3px";
+    div28.style.borderBottomRightRadius = "3px";
+    div28.style.borderBottomLeftRadius = "3px";
+    div28.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div28.addEventListener("mouseover", () => {
+    div28.style.background = "rgb(25, 184, 216)";
+    div28.style.cursor = "pointer";
+  })
+  
+  div28.addEventListener("mouseout", () => {
+    div28.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Backslash") {
@@ -1188,6 +1855,29 @@ div29.addEventListener("click", () => {
     // console.log( textarea.value.selectionStart ) ;
     textarea.innerHTML += "";
 });
+
+div29.addEventListener("mousedown", () => {
+    div29.style.borderTopRightRadius = "10px";
+    div29.style.borderBottomRightRadius = "10px";
+    div29.style.borderBottomLeftRadius = "10px";
+    div29.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div29.addEventListener("mouseup", () => {
+    div29.style.borderTopRightRadius = "3px";
+    div29.style.borderBottomRightRadius = "3px";
+    div29.style.borderBottomLeftRadius = "3px";
+    div29.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div29.addEventListener("mouseover", () => {
+    div29.style.background = "rgb(25, 184, 216)";
+    div29.style.cursor = "pointer";
+  })
+  
+  div29.addEventListener("mouseout", () => {
+    div29.style.background = "rgb(32, 27, 27)";
+  })
 
 textarea.onfocus = () => {
     console.log(textarea.value.length);
@@ -1254,6 +1944,30 @@ div30.addEventListener("click", () => {
     textarea.innerHTML += " ";
 });
 
+
+div30.addEventListener("mousedown", () => {
+    div30.style.borderTopRightRadius = "10px";
+    div30.style.borderBottomRightRadius = "10px";
+    div30.style.borderBottomLeftRadius = "10px";
+    div30.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div30.addEventListener("mouseup", () => {
+    div30.style.borderTopRightRadius = "3px";
+    div30.style.borderBottomRightRadius = "3px";
+    div30.style.borderBottomLeftRadius = "3px";
+    div30.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div30.addEventListener("mouseover", () => {
+    div30.style.background = "rgb(25, 184, 216)";
+    div30.style.cursor = "pointer";
+  })
+  
+  div30.addEventListener("mouseout", () => {
+    div30.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "CapsLock") {
         div30.style.background = "blue";
@@ -1292,6 +2006,30 @@ p62.innerHTML = "A";
 div31.addEventListener("click", () => {
     textarea.innerHTML += "a";
 });
+
+
+div31.addEventListener("mousedown", () => {
+    div31.style.borderTopRightRadius = "10px";
+    div31.style.borderBottomRightRadius = "10px";
+    div31.style.borderBottomLeftRadius = "10px";
+    div31.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div31.addEventListener("mouseup", () => {
+    div31.style.borderTopRightRadius = "3px";
+    div31.style.borderBottomRightRadius = "3px";
+    div31.style.borderBottomLeftRadius = "3px";
+    div31.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div31.addEventListener("mouseover", () => {
+    div31.style.background = "rgb(25, 184, 216)";
+    div31.style.cursor = "pointer";
+  })
+  
+  div31.addEventListener("mouseout", () => {
+    div31.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyA") {
@@ -1332,6 +2070,30 @@ div32.addEventListener("click", () => {
     textarea.innerHTML += "s";
 });
 
+
+div32.addEventListener("mousedown", () => {
+    div32.style.borderTopRightRadius = "10px";
+    div32.style.borderBottomRightRadius = "10px";
+    div32.style.borderBottomLeftRadius = "10px";
+    div32.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div32.addEventListener("mouseup", () => {
+    div32.style.borderTopRightRadius = "3px";
+    div32.style.borderBottomRightRadius = "3px";
+    div32.style.borderBottomLeftRadius = "3px";
+    div32.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div32.addEventListener("mouseover", () => {
+    div32.style.background = "rgb(25, 184, 216)";
+    div32.style.cursor = "pointer";
+  })
+  
+  div32.addEventListener("mouseout", () => {
+    div32.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyS") {
         textarea.innerHTML += "s";
@@ -1370,6 +2132,30 @@ p66.innerHTML = "D";
 div33.addEventListener("click", () => {
     textarea.innerHTML += "d";
 });
+
+
+div33.addEventListener("mousedown", () => {
+    div33.style.borderTopRightRadius = "10px";
+    div33.style.borderBottomRightRadius = "10px";
+    div33.style.borderBottomLeftRadius = "10px";
+    div33.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div33.addEventListener("mouseup", () => {
+    div33.style.borderTopRightRadius = "3px";
+    div33.style.borderBottomRightRadius = "3px";
+    div33.style.borderBottomLeftRadius = "3px";
+    div33.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div33.addEventListener("mouseover", () => {
+    div33.style.background = "rgb(25, 184, 216)";
+    div33.style.cursor = "pointer";
+  })
+  
+  div33.addEventListener("mouseout", () => {
+    div33.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyD") {
@@ -1410,6 +2196,29 @@ div34.addEventListener("click", () => {
     textarea.innerHTML += "f";
 });
 
+div34.addEventListener("mousedown", () => {
+    div34.style.borderTopRightRadius = "10px";
+    div34.style.borderBottomRightRadius = "10px";
+    div34.style.borderBottomLeftRadius = "10px";
+    div34.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div34.addEventListener("mouseup", () => {
+    div34.style.borderTopRightRadius = "3px";
+    div34.style.borderBottomRightRadius = "3px";
+    div34.style.borderBottomLeftRadius = "3px";
+    div34.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div34.addEventListener("mouseover", () => {
+    div34.style.background = "rgb(25, 184, 216)";
+    div34.style.cursor = "pointer";
+  })
+  
+  div34.addEventListener("mouseout", () => {
+    div34.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyF") {
         textarea.innerHTML += "f";
@@ -1448,6 +2257,30 @@ p70.innerHTML = "G";
 div35.addEventListener("click", () => {
     textarea.innerHTML += "g";
 });
+
+
+div35.addEventListener("mousedown", () => {
+    div35.style.borderTopRightRadius = "10px";
+    div35.style.borderBottomRightRadius = "10px";
+    div35.style.borderBottomLeftRadius = "10px";
+    div35.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div35.addEventListener("mouseup", () => {
+    div35.style.borderTopRightRadius = "3px";
+    div35.style.borderBottomRightRadius = "3px";
+    div35.style.borderBottomLeftRadius = "3px";
+    div35.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div35.addEventListener("mouseover", () => {
+    div35.style.background = "rgb(25, 184, 216)";
+    div35.style.cursor = "pointer";
+  })
+  
+  div35.addEventListener("mouseout", () => {
+    div35.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyG") {
@@ -1488,6 +2321,30 @@ div36.addEventListener("click", () => {
     textarea.innerHTML += "h";
 });
 
+div36.addEventListener("mousedown", () => {
+    div36.style.borderTopRightRadius = "10px";
+    div36.style.borderBottomRightRadius = "10px";
+    div36.style.borderBottomLeftRadius = "10px";
+    div36.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div36.addEventListener("mouseup", () => {
+    div36.style.borderTopRightRadius = "3px";
+    div36.style.borderBottomRightRadius = "3px";
+    div36.style.borderBottomLeftRadius = "3px";
+    div36.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div36.addEventListener("mouseover", () => {
+    div36.style.background = "rgb(25, 184, 216)";
+    div36.style.cursor = "pointer";
+  })
+  
+  div36.addEventListener("mouseout", () => {
+    div36.style.background = "rgb(32, 27, 27)";
+  })
+
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyH") {
         textarea.innerHTML += "h";
@@ -1526,6 +2383,30 @@ p74.innerHTML = "J";
 div37.addEventListener("click", () => {
     textarea.innerHTML += "j";
 });
+
+
+div37.addEventListener("mousedown", () => {
+    div37.style.borderTopRightRadius = "10px";
+    div37.style.borderBottomRightRadius = "10px";
+    div37.style.borderBottomLeftRadius = "10px";
+    div37.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div37.addEventListener("mouseup", () => {
+    div37.style.borderTopRightRadius = "3px";
+    div37.style.borderBottomRightRadius = "3px";
+    div37.style.borderBottomLeftRadius = "3px";
+    div37.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div37.addEventListener("mouseover", () => {
+    div37.style.background = "rgb(25, 184, 216)";
+    div37.style.cursor = "pointer";
+  })
+  
+  div37.addEventListener("mouseout", () => {
+    div37.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyJ") {
@@ -1566,6 +2447,30 @@ div38.addEventListener("click", () => {
     textarea.innerHTML += "k";
 });
 
+
+div38.addEventListener("mousedown", () => {
+    div38.style.borderTopRightRadius = "10px";
+    div38.style.borderBottomRightRadius = "10px";
+    div38.style.borderBottomLeftRadius = "10px";
+    div38.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div38.addEventListener("mouseup", () => {
+    div38.style.borderTopRightRadius = "3px";
+    div38.style.borderBottomRightRadius = "3px";
+    div38.style.borderBottomLeftRadius = "3px";
+    div38.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div38.addEventListener("mouseover", () => {
+    div38.style.background = "rgb(25, 184, 216)";
+    div38.style.cursor = "pointer";
+  })
+  
+  div38.addEventListener("mouseout", () => {
+    div38.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyK") {
         textarea.innerHTML += "k";
@@ -1604,6 +2509,29 @@ p78.innerHTML = "L";
 div39.addEventListener("click", () => {
     textarea.innerHTML += "l";
 });
+
+div39.addEventListener("mousedown", () => {
+    div39.style.borderTopRightRadius = "10px";
+    div39.style.borderBottomRightRadius = "10px";
+    div39.style.borderBottomLeftRadius = "10px";
+    div39.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div39.addEventListener("mouseup", () => {
+    div39.style.borderTopRightRadius = "3px";
+    div39.style.borderBottomRightRadius = "3px";
+    div39.style.borderBottomLeftRadius = "3px";
+    div39.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div39.addEventListener("mouseover", () => {
+    div39.style.background = "rgb(25, 184, 216)";
+    div39.style.cursor = "pointer";
+  })
+  
+  div39.addEventListener("mouseout", () => {
+    div39.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyL") {
@@ -1644,6 +2572,30 @@ div40.addEventListener("click", () => {
     textarea.innerHTML += ";";
 });
 
+
+div40.addEventListener("mousedown", () => {
+    div40.style.borderTopRightRadius = "10px";
+    div40.style.borderBottomRightRadius = "10px";
+    div40.style.borderBottomLeftRadius = "10px";
+    div40.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div40.addEventListener("mouseup", () => {
+    div40.style.borderTopRightRadius = "3px";
+    div40.style.borderBottomRightRadius = "3px";
+    div40.style.borderBottomLeftRadius = "3px";
+    div40.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div40.addEventListener("mouseover", () => {
+    div40.style.background = "rgb(25, 184, 216)";
+    div40.style.cursor = "pointer";
+  })
+  
+  div40.addEventListener("mouseout", () => {
+    div40.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "Semicolon") {
         textarea.innerHTML += ";";
@@ -1682,6 +2634,30 @@ p82.innerHTML = "'";
 div41.addEventListener("click", () => {
     textarea.innerHTML += "'";
 });
+
+
+div41.addEventListener("mousedown", () => {
+    div41.style.borderTopRightRadius = "10px";
+    div41.style.borderBottomRightRadius = "10px";
+    div41.style.borderBottomLeftRadius = "10px";
+    div41.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div41.addEventListener("mouseup", () => {
+    div41.style.borderTopRightRadius = "3px";
+    div41.style.borderBottomRightRadius = "3px";
+    div41.style.borderBottomLeftRadius = "3px";
+    div41.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div41.addEventListener("mouseover", () => {
+    div41.style.background = "rgb(25, 184, 216)";
+    div41.style.cursor = "pointer";
+  })
+  
+  div41.addEventListener("mouseout", () => {
+    div41.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Quote") {
@@ -1723,6 +2699,30 @@ p84.innerHTML = "ENTER";
 div42.addEventListener("click", () => {
     textarea.innerHTML += " ";
 });
+
+
+div42.addEventListener("mousedown", () => {
+    div42.style.borderTopRightRadius = "10px";
+    div42.style.borderBottomRightRadius = "10px";
+    div42.style.borderBottomLeftRadius = "10px";
+    div42.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div42.addEventListener("mouseup", () => {
+    div42.style.borderTopRightRadius = "3px";
+    div42.style.borderBottomRightRadius = "3px";
+    div42.style.borderBottomLeftRadius = "3px";
+    div42.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div42.addEventListener("mouseover", () => {
+    div42.style.background = "rgb(25, 184, 216)";
+    div42.style.cursor = "pointer";
+  })
+  
+  div42.addEventListener("mouseout", () => {
+    div42.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Enter") {
@@ -1769,6 +2769,30 @@ div43.addEventListener("click", () => {
     // textarea.innerHTML +=  "/";
 });
 
+
+div43.addEventListener("mousedown", () => {
+    div43.style.borderTopRightRadius = "10px";
+    div43.style.borderBottomRightRadius = "10px";
+    div43.style.borderBottomLeftRadius = "10px";
+    div43.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div43.addEventListener("mouseup", () => {
+    div43.style.borderTopRightRadius = "3px";
+    div43.style.borderBottomRightRadius = "3px";
+    div43.style.borderBottomLeftRadius = "3px";
+    div43.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div43.addEventListener("mouseover", () => {
+    div43.style.background = "rgb(25, 184, 216)";
+    div43.style.cursor = "pointer";
+  })
+  
+  div43.addEventListener("mouseout", () => {
+    div43.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "ShiftLeft") {
         //    textarea.innerHTML +=  "/";
@@ -1808,6 +2832,30 @@ div44.addEventListener("click", () => {
     textarea.innerHTML += "\\";
 });
 
+
+div44.addEventListener("mousedown", () => {
+    div44.style.borderTopRightRadius = "10px";
+    div44.style.borderBottomRightRadius = "10px";
+    div44.style.borderBottomLeftRadius = "10px";
+    div44.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div44.addEventListener("mouseup", () => {
+    div44.style.borderTopRightRadius = "3px";
+    div44.style.borderBottomRightRadius = "3px";
+    div44.style.borderBottomLeftRadius = "3px";
+    div44.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div44.addEventListener("mouseover", () => {
+    div44.style.background = "rgb(25, 184, 216)";
+    div44.style.cursor = "pointer";
+  })
+  
+  div44.addEventListener("mouseout", () => {
+    div44.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "Backslash") {
         textarea.innerHTML += "\\";
@@ -1846,6 +2894,30 @@ p90.innerHTML = "Z";
 div45.addEventListener("click", () => {
     textarea.innerHTML += "z";
 });
+
+
+div45.addEventListener("mousedown", () => {
+    div45.style.borderTopRightRadius = "10px";
+    div45.style.borderBottomRightRadius = "10px";
+    div45.style.borderBottomLeftRadius = "10px";
+    div45.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div45.addEventListener("mouseup", () => {
+    div45.style.borderTopRightRadius = "3px";
+    div45.style.borderBottomRightRadius = "3px";
+    div45.style.borderBottomLeftRadius = "3px";
+    div45.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div45.addEventListener("mouseover", () => {
+    div45.style.background = "rgb(25, 184, 216)";
+    div45.style.cursor = "pointer";
+  })
+  
+  div45.addEventListener("mouseout", () => {
+    div45.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyZ") {
@@ -1887,6 +2959,30 @@ div46.addEventListener("click", () => {
     textarea.innerHTML += "x";
 });
 
+
+div46.addEventListener("mousedown", () => {
+    div46.style.borderTopRightRadius = "10px";
+    div46.style.borderBottomRightRadius = "10px";
+    div46.style.borderBottomLeftRadius = "10px";
+    div46.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div46.addEventListener("mouseup", () => {
+    div46.style.borderTopRightRadius = "3px";
+    div46.style.borderBottomRightRadius = "3px";
+    div46.style.borderBottomLeftRadius = "3px";
+    div46.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div46.addEventListener("mouseover", () => {
+    div46.style.background = "rgb(25, 184, 216)";
+    div46.style.cursor = "pointer";
+  })
+  
+  div46.addEventListener("mouseout", () => {
+    div46.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyX") {
         textarea.innerHTML += "x";
@@ -1925,6 +3021,30 @@ p94.innerHTML = "C";
 div47.addEventListener("click", () => {
     textarea.innerHTML += "c";
 });
+
+
+div47.addEventListener("mousedown", () => {
+    div47.style.borderTopRightRadius = "10px";
+    div47.style.borderBottomRightRadius = "10px";
+    div47.style.borderBottomLeftRadius = "10px";
+    div47.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div47.addEventListener("mouseup", () => {
+    div47.style.borderTopRightRadius = "3px";
+    div47.style.borderBottomRightRadius = "3px";
+    div47.style.borderBottomLeftRadius = "3px";
+    div47.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div47.addEventListener("mouseover", () => {
+    div47.style.background = "rgb(25, 184, 216)";
+    div47.style.cursor = "pointer";
+  })
+  
+  div47.addEventListener("mouseout", () => {
+    div47.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyC") {
@@ -1965,6 +3085,31 @@ div48.addEventListener("click", () => {
     textarea.innerHTML += "v";
 });
 
+
+div48.addEventListener("mousedown", () => {
+    div48.style.borderTopRightRadius = "10px";
+    div48.style.borderBottomRightRadius = "10px";
+    div48.style.borderBottomLeftRadius = "10px";
+    div48.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div48.addEventListener("mouseup", () => {
+    div48.style.borderTopRightRadius = "3px";
+    div48.style.borderBottomRightRadius = "3px";
+    div48.style.borderBottomLeftRadius = "3px";
+    div48.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div48.addEventListener("mouseover", () => {
+    div48.style.background = "rgb(25, 184, 216)";
+    div48.style.cursor = "pointer";
+  })
+  
+  div48.addEventListener("mouseout", () => {
+    div48.style.background = "rgb(32, 27, 27)";
+  })
+
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyV") {
         textarea.innerHTML += "v";
@@ -2003,6 +3148,30 @@ p98.innerHTML = "B";
 div49.addEventListener("click", () => {
     textarea.innerHTML += "b";
 });
+
+
+div49.addEventListener("mousedown", () => {
+    div49.style.borderTopRightRadius = "10px";
+    div49.style.borderBottomRightRadius = "10px";
+    div49.style.borderBottomLeftRadius = "10px";
+    div49.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div49.addEventListener("mouseup", () => {
+    div49.style.borderTopRightRadius = "3px";
+    div49.style.borderBottomRightRadius = "3px";
+    div49.style.borderBottomLeftRadius = "3px";
+    div49.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div49.addEventListener("mouseover", () => {
+    div49.style.background = "rgb(25, 184, 216)";
+    div49.style.cursor = "pointer";
+  })
+  
+  div49.addEventListener("mouseout", () => {
+    div49.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyB") {
@@ -2043,6 +3212,30 @@ div50.addEventListener("click", () => {
     textarea.innerHTML += "n";
 });
 
+
+div50.addEventListener("mousedown", () => {
+    div50.style.borderTopRightRadius = "10px";
+    div50.style.borderBottomRightRadius = "10px";
+    div50.style.borderBottomLeftRadius = "10px";
+    div50.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div50.addEventListener("mouseup", () => {
+    div50.style.borderTopRightRadius = "3px";
+    div50.style.borderBottomRightRadius = "3px";
+    div50.style.borderBottomLeftRadius = "3px";
+    div50.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div50.addEventListener("mouseover", () => {
+    div50.style.background = "rgb(25, 184, 216)";
+    div50.style.cursor = "pointer";
+  })
+  
+  div50.addEventListener("mouseout", () => {
+    div50.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyN") {
         textarea.innerHTML += "n";
@@ -2081,6 +3274,30 @@ p102.innerHTML = "M";
 div51.addEventListener("click", () => {
     textarea.innerHTML += "m";
 });
+
+
+div51.addEventListener("mousedown", () => {
+    div51.style.borderTopRightRadius = "10px";
+    div51.style.borderBottomRightRadius = "10px";
+    div51.style.borderBottomLeftRadius = "10px";
+    div51.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div51.addEventListener("mouseup", () => {
+    div51.style.borderTopRightRadius = "3px";
+    div51.style.borderBottomRightRadius = "3px";
+    div51.style.borderBottomLeftRadius = "3px";
+    div51.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div51.addEventListener("mouseover", () => {
+    div51.style.background = "rgb(25, 184, 216)";
+    div51.style.cursor = "pointer";
+  })
+  
+  div51.addEventListener("mouseout", () => {
+    div51.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "KeyM") {
@@ -2121,6 +3338,30 @@ div52.addEventListener("click", () => {
     textarea.innerHTML += ",";
 });
 
+
+div52.addEventListener("mousedown", () => {
+    div52.style.borderTopRightRadius = "10px";
+    div52.style.borderBottomRightRadius = "10px";
+    div52.style.borderBottomLeftRadius = "10px";
+    div52.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div52.addEventListener("mouseup", () => {
+    div52.style.borderTopRightRadius = "3px";
+    div52.style.borderBottomRightRadius = "3px";
+    div52.style.borderBottomLeftRadius = "3px";
+    div52.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div52.addEventListener("mouseover", () => {
+    div52.style.background = "rgb(25, 184, 216)";
+    div52.style.cursor = "pointer";
+  })
+  
+  div52.addEventListener("mouseout", () => {
+    div52.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "Comma") {
         textarea.innerHTML += ",";
@@ -2159,6 +3400,30 @@ p106.innerHTML = ".";
 div53.addEventListener("click", () => {
     textarea.innerHTML += ".";
 });
+
+
+div53.addEventListener("mousedown", () => {
+    div53.style.borderTopRightRadius = "10px";
+    div53.style.borderBottomRightRadius = "10px";
+    div53.style.borderBottomLeftRadius = "10px";
+    div53.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div53.addEventListener("mouseup", () => {
+    div53.style.borderTopRightRadius = "3px";
+    div53.style.borderBottomRightRadius = "3px";
+    div53.style.borderBottomLeftRadius = "3px";
+    div53.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div53.addEventListener("mouseover", () => {
+    div53.style.background = "rgb(25, 184, 216)";
+    div53.style.cursor = "pointer";
+  })
+  
+  div53.addEventListener("mouseout", () => {
+    div53.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Period") {
@@ -2199,6 +3464,30 @@ div531.addEventListener("click", () => {
     textarea.innerHTML += "/";
 });
 
+
+div531.addEventListener("mousedown", () => {
+    div531.style.borderTopRightRadius = "10px";
+    div531.style.borderBottomRightRadius = "10px";
+    div531.style.borderBottomLeftRadius = "10px";
+    div531.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div531.addEventListener("mouseup", () => {
+    div531.style.borderTopRightRadius = "3px";
+    div531.style.borderBottomRightRadius = "3px";
+    div531.style.borderBottomLeftRadius = "3px";
+    div531.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div531.addEventListener("mouseover", () => {
+    div531.style.background = "rgb(25, 184, 216)";
+    div531.style.cursor = "pointer";
+  })
+  
+  div531.addEventListener("mouseout", () => {
+    div531.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "Slash") {
         textarea.innerHTML += "/";
@@ -2238,6 +3527,30 @@ div54.addEventListener("click", () => {
     // textarea.innerHTML +=  "/";
 });
 
+
+div54.addEventListener("mousedown", () => {
+    div54.style.borderTopRightRadius = "10px";
+    div54.style.borderBottomRightRadius = "10px";
+    div54.style.borderBottomLeftRadius = "10px";
+    div54.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div54.addEventListener("mouseup", () => {
+    div54.style.borderTopRightRadius = "3px";
+    div54.style.borderBottomRightRadius = "3px";
+    div54.style.borderBottomLeftRadius = "3px";
+    div54.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div54.addEventListener("mouseover", () => {
+    div54.style.background = "rgb(25, 184, 216)";
+    div54.style.cursor = "pointer";
+  })
+  
+  div54.addEventListener("mouseout", () => {
+    div54.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "ArrowUp") {
         //    textarea.innerHTML +=  "/";
@@ -2276,6 +3589,30 @@ p112.innerHTML = "Shift";
 div55.addEventListener("click", () => {
     // textarea.innerHTML +=  "/";
 });
+
+
+div55.addEventListener("mousedown", () => {
+    div55.style.borderTopRightRadius = "10px";
+    div55.style.borderBottomRightRadius = "10px";
+    div55.style.borderBottomLeftRadius = "10px";
+    div55.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div55.addEventListener("mouseup", () => {
+    div55.style.borderTopRightRadius = "3px";
+    div55.style.borderBottomRightRadius = "3px";
+    div55.style.borderBottomLeftRadius = "3px";
+    div55.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div55.addEventListener("mouseover", () => {
+    div55.style.background = "rgb(25, 184, 216)";
+    div55.style.cursor = "pointer";
+  })
+  
+  div55.addEventListener("mouseout", () => {
+    div55.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "ShiftRight") {
@@ -2321,6 +3658,30 @@ div56.addEventListener("click", () => {
     // textarea.innerHTML +=  "/";
 });
 
+
+div56.addEventListener("mousedown", () => {
+    div56.style.borderTopRightRadius = "10px";
+    div56.style.borderBottomRightRadius = "10px";
+    div56.style.borderBottomLeftRadius = "10px";
+    div56.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div56.addEventListener("mouseup", () => {
+    div56.style.borderTopRightRadius = "3px";
+    div56.style.borderBottomRightRadius = "3px";
+    div56.style.borderBottomLeftRadius = "3px";
+    div56.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div56.addEventListener("mouseover", () => {
+    div56.style.background = "rgb(25, 184, 216)";
+    div56.style.cursor = "pointer";
+  })
+  
+  div56.addEventListener("mouseout", () => {
+    div56.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "ControlLeft") {
         //    textarea.innerHTML +=  "/";
@@ -2362,6 +3723,30 @@ div57.addEventListener("click", () => {
     // textarea.innerHTML +=  "/";
 });
 
+
+div57.addEventListener("mousedown", () => {
+    div57.style.borderTopRightRadius = "10px";
+    div57.style.borderBottomRightRadius = "10px";
+    div57.style.borderBottomLeftRadius = "10px";
+    div57.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div57.addEventListener("mouseup", () => {
+    div57.style.borderTopRightRadius = "3px";
+    div57.style.borderBottomRightRadius = "3px";
+    div57.style.borderBottomLeftRadius = "3px";
+    div57.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div57.addEventListener("mouseover", () => {
+    div57.style.background = "rgb(25, 184, 216)";
+    div57.style.cursor = "pointer";
+  })
+  
+  div57.addEventListener("mouseout", () => {
+    div57.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "MetaLeft") {
         //    textarea.innerHTML +=  "/";
@@ -2401,6 +3786,30 @@ div58.addEventListener("click", () => {
     // textarea.innerHTML +=  "/";
 });
 
+
+div58.addEventListener("mousedown", () => {
+    div58.style.borderTopRightRadius = "10px";
+    div58.style.borderBottomRightRadius = "10px";
+    div58.style.borderBottomLeftRadius = "10px";
+    div58.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div58.addEventListener("mouseup", () => {
+    div58.style.borderTopRightRadius = "3px";
+    div58.style.borderBottomRightRadius = "3px";
+    div58.style.borderBottomLeftRadius = "3px";
+    div58.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div58.addEventListener("mouseover", () => {
+    div58.style.background = "rgb(25, 184, 216)";
+    div58.style.cursor = "pointer";
+  })
+  
+  div58.addEventListener("mouseout", () => {
+    div58.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener("keydown", function (event) {
     if (event.code == "AltLeft") {
         //    textarea.innerHTML +=  "/";
@@ -2429,6 +3838,30 @@ section5.append(div59);
 div59.addEventListener("click", () => {
     textarea.innerHTML += " ";
 });
+
+
+div59.addEventListener("mousedown", () => {
+    div59.style.borderTopRightRadius = "10px";
+    div59.style.borderBottomRightRadius = "10px";
+    div59.style.borderBottomLeftRadius = "10px";
+    div59.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div59.addEventListener("mouseup", () => {
+    div59.style.borderTopRightRadius = "3px";
+    div59.style.borderBottomRightRadius = "3px";
+    div59.style.borderBottomLeftRadius = "3px";
+    div59.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div59.addEventListener("mouseover", () => {
+    div59.style.background = "rgb(25, 184, 216)";
+    div59.style.cursor = "pointer";
+  })
+  
+  div59.addEventListener("mouseout", () => {
+    div59.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Space") {
@@ -2477,6 +3910,30 @@ div60.addEventListener("click", () => {
     //  textarea.innerHTML +=  " ";
 });
 
+
+div60.addEventListener("mousedown", () => {
+    div60.style.borderTopRightRadius = "10px";
+    div60.style.borderBottomRightRadius = "10px";
+    div60.style.borderBottomLeftRadius = "10px";
+    div60.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div60.addEventListener("mouseup", () => {
+    div60.style.borderTopRightRadius = "3px";
+    div60.style.borderBottomRightRadius = "3px";
+    div60.style.borderBottomLeftRadius = "3px";
+    div60.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div60.addEventListener("mouseover", () => {
+    div60.style.background = "rgb(25, 184, 216)";
+    div60.style.cursor = "pointer";
+  })
+  
+  div60.addEventListener("mouseout", () => {
+    div60.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "AltRight") {
         //    textarea.innerHTML +=  "/";
@@ -2515,6 +3972,29 @@ p122.innerHTML = "Ctrl";
 div64.addEventListener("click", () => {
     //  textarea.innerHTML +=  " ";
 });
+
+div64.addEventListener("mousedown", () => {
+    div64.style.borderTopRightRadius = "10px";
+    div64.style.borderBottomRightRadius = "10px";
+    div64.style.borderBottomLeftRadius = "10px";
+    div64.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div64.addEventListener("mouseup", () => {
+    div64.style.borderTopRightRadius = "3px";
+    div64.style.borderBottomRightRadius = "3px";
+    div64.style.borderBottomLeftRadius = "3px";
+    div64.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div64.addEventListener("mouseover", () => {
+    div64.style.background = "rgb(25, 184, 216)";
+    div64.style.cursor = "pointer";
+  })
+  
+  div64.addEventListener("mouseout", () => {
+    div64.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "ControlLeft") {
@@ -2557,6 +4037,30 @@ div61.addEventListener("click", () => {
     //    textarea.innerHTML +=  " ";
 });
 
+
+div61.addEventListener("mousedown", () => {
+    div61.style.borderTopRightRadius = "10px";
+    div61.style.borderBottomRightRadius = "10px";
+    div61.style.borderBottomLeftRadius = "10px";
+    div61.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div61.addEventListener("mouseup", () => {
+    div61.style.borderTopRightRadius = "3px";
+    div61.style.borderBottomRightRadius = "3px";
+    div61.style.borderBottomLeftRadius = "3px";
+    div61.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div61.addEventListener("mouseover", () => {
+    div61.style.background = "rgb(25, 184, 216)";
+    div61.style.cursor = "pointer";
+  })
+  
+  div61.addEventListener("mouseout", () => {
+    div61.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "ArrowLeft") {
         //textarea.innerHTML +=  " ";
@@ -2596,6 +4100,30 @@ div62.addEventListener("click", () => {
     //    textarea.innerHTML +=  " ";
 });
 
+
+div62.addEventListener("mousedown", () => {
+    div62.style.borderTopRightRadius = "10px";
+    div62.style.borderBottomRightRadius = "10px";
+    div62.style.borderBottomLeftRadius = "10px";
+    div62.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div62.addEventListener("mouseup", () => {
+    div62.style.borderTopRightRadius = "3px";
+    div62.style.borderBottomRightRadius = "3px";
+    div62.style.borderBottomLeftRadius = "3px";
+    div62.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div62.addEventListener("mouseover", () => {
+    div62.style.background = "rgb(25, 184, 216)";
+    div62.style.cursor = "pointer";
+  })
+  
+  div62.addEventListener("mouseout", () => {
+    div62.style.background = "rgb(32, 27, 27)";
+  })
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "ArrowDown") {
         //textarea.innerHTML +=  " ";
@@ -2634,6 +4162,30 @@ p128.innerHTML = "&#9658";
 div63.addEventListener("click", () => {
     //    textarea.innerHTML +=  " ";
 });
+
+
+div63.addEventListener("mousedown", () => {
+    div63.style.borderTopRightRadius = "10px";
+    div63.style.borderBottomRightRadius = "10px";
+    div63.style.borderBottomLeftRadius = "10px";
+    div63.style.borderTopLeftRadius = "10px";    
+  })
+  
+  div63.addEventListener("mouseup", () => {
+    div63.style.borderTopRightRadius = "3px";
+    div63.style.borderBottomRightRadius = "3px";
+    div63.style.borderBottomLeftRadius = "3px";
+    div63.style.borderTopLeftRadius = "3px";    
+  })
+  
+  div63.addEventListener("mouseover", () => {
+    div63.style.background = "rgb(25, 184, 216)";
+    div63.style.cursor = "pointer";
+  })
+  
+  div63.addEventListener("mouseout", () => {
+    div63.style.background = "rgb(32, 27, 27)";
+  })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "ArrowRight") {
