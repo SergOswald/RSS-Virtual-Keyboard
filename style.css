@@ -2,8 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-
-
 }
 
 .wripper {
@@ -71,17 +69,14 @@ body {
 .textarea {
     display:block;
     position:relative;
-
     margin:0 auto;
     padding: 0;
-
     top:100px;
-    
     width: 900px;
     height: 250px;
-
     font-size: 15pt;
-
+    resize: none;
+    overflow: auto;
 }
 
 .keyboard {
@@ -361,10 +356,25 @@ body {
 
 }
 
-.section1 > div:hover, .section2 > div:hover, .section3 > div:hover, .section4 > div:hover, .section5 > div:hover {
+/*
+
+.section1 > div:hover, 
+.section2 > div:hover, 
+.section3 > div:hover, 
+.section4 > div:hover, 
+.section5 > div:hover {
+  background-color: rgb(25, 184, 216);
+  cursor: pointer;
+
+}
+
+*/
+
+/* .tilda:hover {
     background-color: rgb(25, 184, 216);
     cursor: pointer;
-}
+  
+} */
 
 .section2 {
     margin-right: 0;
@@ -443,4 +453,4 @@ body {
     line-height: 15pt;
     font-size: 15pt;
 
-)
+}
