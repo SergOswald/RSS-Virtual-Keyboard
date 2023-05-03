@@ -58,7 +58,6 @@ div1.addEventListener("click", () => {
  
 })
 
-
 div1.addEventListener("mousedown", () => {
   div1.style.borderTopRightRadius = "10px";
   div1.style.borderBottomRightRadius = "10px";
@@ -102,15 +101,16 @@ document.addEventListener('keyup', function (event) {
     div1.style.borderTopLeftRadius = "3px";
 });
 
+
 document.addEventListener('keydown', function (event) {
-    if (event.code == "Backquote" && (event.code == "ShiftLeft" || event.code == "ShiftRight")) {
-        textarea.innerHTML += "~";
-        div1.style.background = "blue";
-        div1.style.borderTopRightRadius = "10px";
-        div1.style.borderBottomRightRadius = "10px";
-        div1.style.borderBottomLeftRadius = "10px";
-        div1.style.borderTopLeftRadius = "10px";
-    }
+      if (event.code == "Backquote" && (event.code == "ShiftLeft" || event.code == "ShiftRight")) {
+         textarea.innerHTML += "~";
+          div1.style.background = "blue";
+          div1.style.borderTopRightRadius = "10px";
+          div1.style.borderBottomRightRadius = "10px";
+          div1.style.borderBottomLeftRadius = "10px";
+          div1.style.borderTopLeftRadius = "10px";
+      }
 });
 
 
@@ -971,7 +971,8 @@ div15.append(p30);
 p30.innerHTML = "Tab";
 
 div15.addEventListener("click", () => {
-    textarea.innerHTML += "Tab";
+  //preventDefault();
+  textarea.innerHTML += "\t";
 })
 
 div15.addEventListener("mousedown", () => {
@@ -999,12 +1000,13 @@ div15.addEventListener("mousedown", () => {
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Tab") {
-        textarea.innerHTML += "Tab";
-        div15.style.background = "blue";
-        div15.style.borderTopRightRadius = "10px";
-        div15.style.borderBottomRightRadius = "10px";
-        div15.style.borderBottomLeftRadius = "10px";
-        div15.style.borderTopLeftRadius = "10px";
+      event.preventDefault();
+      textarea.innerHTML += "\t";
+      div15.style.background = "blue";
+      div15.style.borderTopRightRadius = "10px";
+      div15.style.borderBottomRightRadius = "10px";
+      div15.style.borderBottomLeftRadius = "10px";
+      div15.style.borderTopLeftRadius = "10px";
     }
 });
 
@@ -1849,47 +1851,43 @@ p58.className = "textButBackspace";
 div29.append(p58);
 p58.innerHTML = "Del";
 
-//не могу реализовать, только удаленіе целіком
 
 div29.addEventListener("click", () => {
     // console.log( textarea.value.selectionStart ) ;
-    textarea.innerHTML += "";
+  const cursorPosition = textarea.selectionStart;
+  textarea.value = textarea.value.slice( 0 , cursorPosition ) + 
+  textarea.value.slice( cursorPosition + 1 );
+  textarea.setSelectionRange( cursorPosition, cursorPosition );
+  //textarea.innerHTML += "";
 });
 
 div29.addEventListener("mousedown", () => {
-    div29.style.borderTopRightRadius = "10px";
-    div29.style.borderBottomRightRadius = "10px";
-    div29.style.borderBottomLeftRadius = "10px";
-    div29.style.borderTopLeftRadius = "10px";    
-  })
+  div29.style.borderTopRightRadius = "10px";
+  div29.style.borderBottomRightRadius = "10px";
+  div29.style.borderBottomLeftRadius = "10px";
+  div29.style.borderTopLeftRadius = "10px";    
+})
   
-  div29.addEventListener("mouseup", () => {
-    div29.style.borderTopRightRadius = "3px";
-    div29.style.borderBottomRightRadius = "3px";
-    div29.style.borderBottomLeftRadius = "3px";
-    div29.style.borderTopLeftRadius = "3px";    
-  })
+div29.addEventListener("mouseup", () => {
+  div29.style.borderTopRightRadius = "3px";
+  div29.style.borderBottomRightRadius = "3px";
+  div29.style.borderBottomLeftRadius = "3px";
+  div29.style.borderTopLeftRadius = "3px";    
+})
   
-  div29.addEventListener("mouseover", () => {
-    div29.style.background = "rgb(25, 184, 216)";
-    div29.style.cursor = "pointer";
-  })
+div29.addEventListener("mouseover", () => {
+  div29.style.background = "rgb(25, 184, 216)";
+  div29.style.cursor = "pointer";
+})
   
-  div29.addEventListener("mouseout", () => {
-    div29.style.background = "rgb(32, 27, 27)";
-  })
+div29.addEventListener("mouseout", () => {
+  div29.style.background = "rgb(32, 27, 27)";
+})
 
 textarea.onfocus = () => {
-    console.log(textarea.value.length);
+  console.log(textarea.value.length);
 };
 
-/*
-textarea.onmousemove = function(event) {
-    event = event || window.event; // кроссбраузерность
-    console.log( event.offsetX ) ;
-   // textarea.innerHTML = event.offsetY;
-}
-*/
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Delete") {
@@ -2694,39 +2692,38 @@ p84.className = "textButBackspace";
 div42.append(p84);
 p84.innerHTML = "ENTER";
 
-//не смог реалізовать
 
 div42.addEventListener("click", () => {
-    textarea.innerHTML += " ";
+  textarea.innerHTML += "\n";
 });
 
 
 div42.addEventListener("mousedown", () => {
-    div42.style.borderTopRightRadius = "10px";
-    div42.style.borderBottomRightRadius = "10px";
-    div42.style.borderBottomLeftRadius = "10px";
-    div42.style.borderTopLeftRadius = "10px";    
-  })
+  div42.style.borderTopRightRadius = "10px";
+  div42.style.borderBottomRightRadius = "10px";
+  div42.style.borderBottomLeftRadius = "10px";
+  div42.style.borderTopLeftRadius = "10px";    
+})
   
-  div42.addEventListener("mouseup", () => {
-    div42.style.borderTopRightRadius = "3px";
-    div42.style.borderBottomRightRadius = "3px";
-    div42.style.borderBottomLeftRadius = "3px";
-    div42.style.borderTopLeftRadius = "3px";    
-  })
+div42.addEventListener("mouseup", () => {
+  div42.style.borderTopRightRadius = "3px";
+  div42.style.borderBottomRightRadius = "3px";
+  div42.style.borderBottomLeftRadius = "3px";
+  div42.style.borderTopLeftRadius = "3px";    
+})
   
-  div42.addEventListener("mouseover", () => {
-    div42.style.background = "rgb(25, 184, 216)";
-    div42.style.cursor = "pointer";
-  })
+div42.addEventListener("mouseover", () => {
+  div42.style.background = "rgb(25, 184, 216)";
+  div42.style.cursor = "pointer";
+})
   
-  div42.addEventListener("mouseout", () => {
-    div42.style.background = "rgb(32, 27, 27)";
+div42.addEventListener("mouseout", () => {
+  div42.style.background = "rgb(32, 27, 27)";
   })
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "Enter") {
-        textarea.innerHTML += " ";
+        textarea.innerHTML += "\n";
         div42.style.background = "blue";
         div42.style.borderTopRightRadius = "10px";
         div42.style.borderBottomRightRadius = "10px";
@@ -3525,6 +3522,12 @@ p110.innerHTML = "▲";
 
 div54.addEventListener("click", () => {
     // textarea.innerHTML +=  "/";
+
+  textarea.focus();
+  const cursorPosition = textarea.selectionStart;
+  textarea.setSelectionRange( 0 , 0 );
+
+
 });
 
 
@@ -4033,8 +4036,16 @@ p124.innerHTML = "&#9668";
 
 //стрелки не смог реализовать
 
+
 div61.addEventListener("click", () => {
     //    textarea.innerHTML +=  " ";
+    textarea.focus();
+    const cursorPosition = textarea.selectionStart;
+
+    if ( cursorPosition > 0 ) {
+      textarea.setSelectionRange(cursorPosition - 1, cursorPosition - 1);
+    }
+
 });
 
 
@@ -4061,9 +4072,15 @@ div61.addEventListener("mousedown", () => {
     div61.style.background = "rgb(32, 27, 27)";
   })
 
+
 document.addEventListener('keydown', function (event) {
     if (event.code == "ArrowLeft") {
         //textarea.innerHTML +=  " ";
+    //    const cursorPosition = textarea.selectionStart;
+        // textarea.focus();
+        // if ( cursorPosition > 0 ) {
+        //   textarea.setSelectionRange(cursorPosition - 1, cursorPosition - 1);
+        // }
         div61.style.background = "blue";
         div61.style.borderTopRightRadius = "10px";
         div61.style.borderBottomRightRadius = "10px";
@@ -4098,6 +4115,10 @@ p126.innerHTML = "▼";
 
 div62.addEventListener("click", () => {
     //    textarea.innerHTML +=  " ";
+  textarea.focus();
+  const cursorPosition = textarea.selectionStart;  
+  textarea.setSelectionRange( textarea.value.length, textarea.value.length );
+
 });
 
 
@@ -4161,6 +4182,13 @@ p128.innerHTML = "&#9658";
 
 div63.addEventListener("click", () => {
     //    textarea.innerHTML +=  " ";
+    textarea.focus();
+    const cursorPosition = textarea.selectionStart;
+
+    if ( cursorPosition < textarea.value.length ) {
+      textarea.setSelectionRange( cursorPosition + 1, cursorPosition + 1 );
+    }
+
 });
 
 
