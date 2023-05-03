@@ -69,17 +69,14 @@ body {
 .textarea {
     display:block;
     position:relative;
-
     margin:0 auto;
     padding: 0;
-
     top:100px;
-    
     width: 900px;
     height: 250px;
-
     font-size: 15pt;
-
+    resize: none;
+    overflow: auto;
 }
 
 .keyboard {
