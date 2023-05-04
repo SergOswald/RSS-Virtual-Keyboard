@@ -1939,32 +1939,45 @@ p60.innerHTML = "CapsLk";
 //кнопка не реализована
 
 div30.addEventListener("click", () => {
-    textarea.innerHTML += " ";
+    //textarea.innerHTML += " ";
 });
 
 
 div30.addEventListener("mousedown", () => {
+  if( !"mousedown" ) {
+    div30.style.borderTopRightRadius = "3px";
+    div30.style.borderBottomRightRadius = "3px";
+    div30.style.borderBottomLeftRadius = "3px";
+    div30.style.borderTopLeftRadius = "3px";   
+  }else{
     div30.style.borderTopRightRadius = "10px";
     div30.style.borderBottomRightRadius = "10px";
     div30.style.borderBottomLeftRadius = "10px";
-    div30.style.borderTopLeftRadius = "10px";    
-  })
+    div30.style.borderTopLeftRadius = "10px";  
+  }
+})
   
-  div30.addEventListener("mouseup", () => {
+/*
+div30.addEventListener("mouseup", () => {
     div30.style.borderTopRightRadius = "3px";
     div30.style.borderBottomRightRadius = "3px";
     div30.style.borderBottomLeftRadius = "3px";
     div30.style.borderTopLeftRadius = "3px";    
-  })
+})
+
+*/
   
-  div30.addEventListener("mouseover", () => {
+div30.addEventListener("mouseover", () => {
     div30.style.background = "rgb(25, 184, 216)";
     div30.style.cursor = "pointer";
-  })
+})
   
+/*
   div30.addEventListener("mouseout", () => {
     div30.style.background = "rgb(32, 27, 27)";
   })
+
+  */
 
 document.addEventListener('keydown', function (event) {
     if (event.code == "CapsLock") {
